@@ -1,0 +1,14 @@
+.contacts {
+  background-color: $background-base;
+}
+
+.contacts__label {
+  @include font-height(1.4em, 1.6em);
+  text-transform: uppercase;
+  color: $text-black-1;
+}
+
+.contacts__address {
+  @include font-height(1.2em, 1.6em);
+  color: $text-gray;
+}

@@ -1,0 +1,21 @@
+.categories__item {
+  background-color: $background-gray;
+}
+
+.categories__title {
+  font-size: 2em;
+  text-transform: uppercase;
+  color: $text-black-1;
+}
+
+.categories__description {
+  @include font-height(1.2em, 1.5em);
+  font-family: "Arial", "Helvetica", sans-serif;
+  color: $text-gray;
+}
+
+.categories__link {
+  font-size: 1.4em;
+  text-transform: uppercase;
+  color: $text-black-1;
+}
