@@ -1,0 +1,11 @@
+.button {
+  color: $text-white;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: $background-green;
+
+  &--gray {
+    color: $text-black-2;
+    background-color: $background-gray;
+  }
+}
