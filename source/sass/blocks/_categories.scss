@@ -1,9 +1,15 @@
+.categories__list {
+  @include list-reset;
+}
+
+
 .categories__item {
   background-color: $background-gray;
 }
 
-.categories__title {
+.categories__title-text {
   font-size: 2em;
+  font-weight: 400;
   text-transform: uppercase;
   color: $text-black-1;
 }
@@ -17,5 +23,6 @@
 .categories__link {
   font-size: 1.4em;
   text-transform: uppercase;
+  text-decoration: none;
   color: $text-black-1;
 }

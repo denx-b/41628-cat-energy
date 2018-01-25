@@ -3,7 +3,8 @@
 }
 
 .example__title {
-  @include font-height(3em, 5em);
+  font-size: 3em;
+  font-weight: 400;
   color: $text-black-1;
 }
 
@@ -26,13 +27,13 @@
 }
 
 .example__price {
-  @include font-height(1.2em, 1.6em);
+  font-size: 1.2em;
   text-transform: uppercase;
   color: $text-black-1;
 }
 
 .example__result-label {
-  @include font-height(1.4em, 1.6em);
+  font-size: 1.4em;
   text-transform: uppercase;
   color: $text-black-1;
 }

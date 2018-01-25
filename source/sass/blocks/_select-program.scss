@@ -1,0 +1,67 @@
+.select-program__title {
+  font-size: 3em;
+  font-weight: 400;
+  color: $text-black-1;
+}
+
+.select-program__text {
+  @include font-height(1.2em, 1.5em);
+  text-transform: uppercase;
+}
+
+.form-program__group {
+  border: none;
+}
+
+.form-program__label {
+  font-size: 1.4em;
+}
+
+/*
+  Форматирование формы временное
+ */
+.form-program__label-block {
+  text-transform: uppercase;
+  color: $text-black-1;
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    flex-grow: 1;
+    margin-left: 10px;
+    padding: 10px;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    color: $text-gray;
+  }
+}
+
+.form-program__title {
+  font-size: 2em;
+  font-weight: 400;
+  color: $text-black-1;
+}
+
+.form-program__textarea {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  color: $text-gray;
+  width: calc(100% - 20px);
+  height: 130px;
+  padding: 10px;
+}
+
+.form-program__button {
+  font-family: "Oswald", sans-serif;
+  border: none;
+}
+
+.form-program__required-label {
+  font-family: "Arial", "Helvetica", sans-serif;
+  color: $text-gray;
+}

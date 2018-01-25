@@ -1,5 +1,5 @@
 .catalog__title {
-  @include font-height(3em, 5em);
+  font-size: 3em;
   color: $text-black-1;
   font-weight: 400;
 }
@@ -9,7 +9,7 @@
 }
 
 .catalog__item-title {
-  @include font-height(1.4em, 1.6em);
+  font-size: 1.4em;
   font-weight: 400;
 }
 
