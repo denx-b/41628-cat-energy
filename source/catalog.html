@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -29,7 +30,7 @@
     <ul class="catalog__list">
       <li class="catalog__item">
         <a href="#"><img src="http://placehold.it/100x100" alt=""></a>
-        <h3 class="catalog__item-title"><a href="#">Cat energy pro 500 г</a></h3>
+        <h3 class="catalog__item-title"><a href="#" class="catalog__item-link">Cat energy pro 500 г</a></h3>
         <table class="catalog__properties">
           <tr>
             <td>Объем</td>
@@ -44,11 +45,11 @@
             <td>700 Р.</td>
           </tr>
         </table>
-        <a class="catalog__order-link button" href="#">Заказать</a>
+        <span class="catalog__order-link button" href="#">Заказать</span>
       </li>
       <li class="catalog__item">
         <a href="#"><img src="http://placehold.it/100x100" alt=""></a>
-        <h3 class="catalog__item-title"><a href="#">Cat energy pro 1000 г</a></h3>
+        <h3 class="catalog__item-title"><a href="#" class="catalog__item-link">Cat energy pro 1000 г</a></h3>
         <table class="catalog__properties">
           <tr>
             <td>Объем</td>
@@ -67,7 +68,7 @@
       </li>
       <li class="catalog__item">
         <a href="#"><img src="http://placehold.it/100x100" alt=""></a>
-        <h3 class="catalog__item-title"><a href="#">Cat energy pro 500 г</a></h3>
+        <h3 class="catalog__item-title"><a href="#" class="catalog__item-link">Cat energy pro 500 г</a></h3>
         <table class="catalog__properties">
           <tr>
             <td>Объем</td>
@@ -86,7 +87,7 @@
       </li>
       <li class="catalog__item">
         <a href="#"><img src="http://placehold.it/100x100" alt=""></a>
-        <h3 class="catalog__item-title"><a href="#">Cat energy pro 1000 г</a></h3>
+        <h3 class="catalog__item-title"><a href="#" class="catalog__item-link">Cat energy pro 1000 г</a></h3>
         <table class="catalog__properties">
           <tr>
             <td>Объем</td>
@@ -105,7 +106,7 @@
       </li>
       <li class="catalog__item">
         <a href="#"><img src="http://placehold.it/100x100" alt=""></a>
-        <h3 class="catalog__item-title"><a href="#">Cat energy slim 500 г</a></h3>
+        <h3 class="catalog__item-title"><a href="#" class="catalog__item-link">Cat energy slim 500 г</a></h3>
         <table class="catalog__properties">
           <tr>
             <td>Объем</td>
@@ -124,7 +125,7 @@
       </li>
       <li class="catalog__item">
         <a href="#"><img src="http://placehold.it/100x100" alt=""></a>
-        <h3 class="catalog__item-title"><a href="#">Cat energy slim 1000 г</a></h3>
+        <h3 class="catalog__item-title"><a href="#" class="catalog__item-link">Cat energy slim 1000 г</a></h3>
         <table class="catalog__properties">
           <tr>
             <td>Объем</td>
@@ -143,7 +144,7 @@
       </li>
       <li class="catalog__item">
         <a href="#"><img src="http://placehold.it/100x100" alt=""></a>
-        <h3 class="catalog__item-title"><a href="#">Cat energy slim 500 г</a></h3>
+        <h3 class="catalog__item-title"><a href="#" class="catalog__item-link">Cat energy slim 500 г</a></h3>
         <table class="catalog__properties">
           <tr>
             <td>Объем</td>
@@ -160,20 +161,22 @@
         </table>
         <a class="catalog__order-link button" href="#">Заказать</a>
       </li>
+      <li class="catalog__item">
+        <a href="#"><img src="http://placehold.it/100x100" alt=""></a>
+        <h3 class="catalog__item-title catalog__item-title--more"><a href="#" class="catalog__item-link">Показать еще 100500 товаров</a></h3>
+        <span class="catalog__text-more">На самом деле вкусов гораздо больше!</span>
+        <a class="more__button button button--gray" href="#">Показать все</a>
+      </li>
     </ul>
-    <div class="catalog__more more">
-      <div class="more__plus"></div>
-      <span class="more__title">Показать еще 100500 товаров</span>
-      <small class="more__text">На самом деле вкусов гораздо больше!</small>
-      <a class="more__button button button--gray" href="#">Показать все</a>
-    </div>
   </section>
 
   <section class="catalog-additional">
     <h2 class="catalog-additional__title">Дополнительные товары</h2>
     <ul class="catalog-additional__list">
       <li class="catalog-additional__item">
-        <h3 class="catalog-additional__item-title"><a href="#">Сахарозаменитель</a></h3>
+        <h3 class="catalog-additional__item-title">
+          <a class="catalog-additional__item-link" href="#">Сахарозаменитель</a>
+        </h3>
         <table class="catalog-additional__properties">
           <tr>
             <td>1 Упаковка</td>
@@ -183,7 +186,9 @@
         <a class="catalog-additional__order button" href="#">Заказать</a>
       </li>
       <li class="catalog-additional__item">
-        <h3 class="catalog-additional__item-title"><a href="#">Питьевая вода</a></h3>
+        <h3 class="catalog-additional__item-title">
+          <a class="catalog-additional__item-link" href="#">Питьевая вода</a>
+        </h3>
         <table class="catalog-additional__properties">
           <tr>
             <td>2 литров</td>
@@ -193,7 +198,9 @@
         <a class="catalog-additional__order button" href="#">Заказать</a>
       </li>
       <li class="catalog-additional__item">
-        <h3 class="catalog-additional__item-title"><a href="#">Молоко</a></h3>
+        <h3 class="catalog-additional__item-title">
+          <a class="catalog-additional__item-link" href="#">Молоко</a>
+        </h3>
         <table class="catalog-additional__properties">
           <tr>
             <td>1 литр</td>
@@ -203,7 +210,9 @@
         <a class="catalog-additional__order button" href="#">Заказать</a>
       </li>
       <li class="catalog-additional__item">
-        <h3 class="catalog-additional__item-title"><a href="#">Витамины</a></h3>
+        <h3 class="catalog-additional__item-title">
+          <a class="catalog-additional__item-link" href="#">Витамины</a>
+        </h3>
         <table class="catalog-additional__properties">
           <tr>
             <td>1 упаковка (30 г)</td>

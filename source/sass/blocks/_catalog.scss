@@ -1,0 +1,30 @@
+.catalog__title {
+  @include font-height(3em, 5em);
+  color: $text-black-1;
+  font-weight: 400;
+}
+
+.catalog__list {
+  @include list-reset;
+}
+
+.catalog__item-title {
+  @include font-height(1.4em, 1.6em);
+  font-weight: 400;
+}
+
+.catalog__item-link {
+  color: $text-black-1;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.catalog__text-more {
+  font-family: "Arial", "Helvetica", sans-serif;
+  color: $text-gray;
+}
+
+.catalog__properties {
+  font-family: "Arial", "Helvetica", sans-serif;
+  color: $text-gray;
+}

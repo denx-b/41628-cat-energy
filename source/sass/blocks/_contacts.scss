@@ -11,4 +11,5 @@
 .contacts__address {
   @include font-height(1.2em, 1.6em);
   color: $text-gray;
+  font-family: "Arial", "Helvetica", sans-serif;
 }

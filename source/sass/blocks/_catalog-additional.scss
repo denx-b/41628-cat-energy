@@ -1,0 +1,25 @@
+.catalog-additional__title {
+  font-size: 2em;
+  color: $text-black-1;
+  font-weight: 400;
+}
+
+.catalog-additional__list {
+  @include list-reset;
+}
+
+.catalog-additional__item-title {
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+.catalog-additional__item-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $text-black-1;
+}
+
+.catalog-additional__properties {
+  font-family: "Arial", "Helvetica", sans-serif;
+  color: $text-gray;
+}
