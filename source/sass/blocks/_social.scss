@@ -1,3 +1,26 @@
 .social {
   background-color: $background-gray;
+  padding: 25px 0;
+  border-bottom: 1px solid $line-gray-3;
+  width: 88%;
+  margin: 0 auto;
+}
+
+.social__list {
+  @include list-reset;
+  display: flex;
+  justify-content: center;
+}
+
+.social__item {
+  margin: 0 20px;
+}
+
+.social__link {
+  width: 15px;
+  height: 15px;
+  background: $text-gray;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -9999px;
 }

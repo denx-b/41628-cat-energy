@@ -2,6 +2,14 @@
   background-color: $background-gray;
 }
 
+.page-footer__logo {
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 1px solid $line-gray-3;
+  width: 88%;
+  margin: 0 auto;
+}
+
 .page-footer__copyright {
   color: $text-gray;
 }
