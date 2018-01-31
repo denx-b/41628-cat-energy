@@ -39,3 +39,29 @@
   margin-top: 5px;
   display: inline-block;
 }
+
+@media (min-width: $tablet-width) {
+  .categories__item {
+    padding: 50px;
+    width: calc(88% - 100px);
+  }
+
+  .categories__image {
+    order: 1;
+  }
+
+  .categories__title {
+    justify-content: space-between;
+  }
+
+  .categories__title-text {
+    margin: 0;
+    font-size: 3em;
+  }
+
+  .categories__description {
+    @include font-height(1.2em, 1.4em);
+    border-bottom: none;
+    padding-right: 220px;
+  }
+}
