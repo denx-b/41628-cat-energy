@@ -1,3 +1,8 @@
+.main-nav {
+  width: 320px;
+  margin: auto;
+}
+
 .main-nav__list {
   @include list-reset;
   background-color: $background-base;
@@ -45,4 +50,40 @@
   border: none;
   width: 18px;
   height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: auto;
+  }
+
+  .main-nav__list {
+    width: 708px;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .main-nav__item {
+    border-bottom: none;
+    flex-grow: 1;
+  }
+
+  .main-nav__item:nth-child(1) {
+    flex-grow: 4;
+  }
+
+  .main-nav__link {
+    font-weight: normal;
+    font-size: 1.4em;
+
+    &--logo {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }
