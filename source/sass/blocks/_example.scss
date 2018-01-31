@@ -8,6 +8,12 @@
   padding: 26px 0;
 }
 
+.example__image {
+  max-width: 100%;
+  margin: auto;
+  display: block;
+}
+
 .example__title {
   font-size: 3em;
   font-weight: 400;
@@ -30,7 +36,10 @@
 .example__info-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;border: 1px solid #999;
+  border-radius: 8px;
+  padding: 10px;
+  margin-right: 15px;
 }
 
 .example__info-value {
@@ -61,4 +70,36 @@
   font-size: 1.4em;
   text-transform: uppercase;
   color: $text-black-1;
+}
+
+@media (min-width: $tablet-width) {
+  .example__title {
+    font-size: 5em;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-basis: 50%;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    width: 50%;
+  }
+
+  .advantages__description {
+    padding: 0;
+  }
+
+  .example__info-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .example__price {
+    font-size: 1.6em;
+    text-align: right;
+    width: 180px;
+    margin-left: auto;
+  }
 }

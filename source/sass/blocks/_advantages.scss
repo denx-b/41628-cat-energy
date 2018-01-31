@@ -21,3 +21,23 @@
   color: $text-gray;
   padding-left: 80px;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages__title {
+    font-size: 5em;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-basis: 50%;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    width: 50%;
+  }
+
+  .advantages__description {
+    padding: 0;
+  }
+}

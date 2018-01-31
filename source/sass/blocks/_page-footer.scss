@@ -10,6 +10,38 @@
   margin: 0 auto;
 }
 
+.page-footer__social {
+  border-bottom: 1px solid $line-gray-3;
+}
+
 .page-footer__copyright {
   color: $text-gray;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+  }
+
+  .page-footer__logo {
+    border-bottom: none;
+  }
+
+  .page-footer__logo__social {
+    border-bottom: none;
+  }
+
+  .footer__copyright {
+    border-bottom: none;
+  }
+
+  .page-footer__social {
+    border-bottom: none;
+  }
+
+  .copyright__name {
+    justify-content: space-around;
+  }
 }
