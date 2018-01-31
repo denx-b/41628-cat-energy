@@ -1,7 +1,14 @@
+.advantages {
+  width: 88%;
+  margin: auto;
+}
+
 .advantages__title {
-  font-size: 3em;
+  font-size: 2.9em;
   font-weight: 400;
   color: $text-black-1;
+  margin-top: 0;
+  margin-bottom: 42px;
 }
 
 .advantages__list {
@@ -9,7 +16,8 @@
 }
 
 .advantages__description {
-  @include font-height(1.2em, 1.5em);
+  @include font-height(1.1em, 1.27em);
   font-family: "Arial", "Helvetica", sans-serif;
   color: $text-gray;
+  padding-left: 80px;
 }
