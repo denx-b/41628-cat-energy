@@ -7,10 +7,7 @@
 
 .main-nav__item {
   text-align: center;
-
-  &:not(:last-child) {
-    border-bottom: 1px solid $line-gray-2;
-  }
+  border-bottom: 1px solid $line-gray-2;
 }
 
 .main-nav__link {

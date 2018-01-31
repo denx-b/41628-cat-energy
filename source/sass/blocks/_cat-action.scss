@@ -1,12 +1,32 @@
 .cat-action {
   color: $text-white;
+  text-align: center;
+  position: relative;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cat-action__title {
-  font-size: 3em;
+  @include font-height(2.9em, 1em);
   font-weight: 400;
+  margin: 0;
+  padding: 27px 0 11px 0;
 }
 
 .cat-action__motto {
-  font-size: 1.2em;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+}
+
+.cat-action__image {
+  margin-bottom: 3px;
+}
+
+.cat-action__button {
+  order: 1;
+  width: 88%;
+  margin: 0 auto;
 }
