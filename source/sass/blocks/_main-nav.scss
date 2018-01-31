@@ -55,6 +55,7 @@
 @media (min-width: $tablet-width) {
   .main-nav {
     width: auto;
+    padding-top: 10px;
   }
 
   .main-nav__list {
@@ -62,6 +63,7 @@
     margin: auto;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
   }
 
   .main-nav__item {
@@ -83,7 +85,17 @@
     }
   }
 
+  .main-nav__logo-image {
+    margin-left: 0;
+    margin-right: 23px;
+  }
+
+  .main-nav__logo-name {
+    margin-left: 0;
+  }
+
   .main-nav__toggle {
+    margin-right: 0;
     display: none;
   }
 }

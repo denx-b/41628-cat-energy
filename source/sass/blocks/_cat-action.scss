@@ -30,3 +30,34 @@
   width: 88%;
   margin: 0 auto;
 }
+
+@media (min-width: $tablet-width) {
+  .cat-action {
+    background: none;
+    color: $text-black-1;
+    text-align: left;
+    width: 528px;
+    margin: auto;
+    align-items: flex-start;
+  }
+
+  .cat-action__title {
+    font-size: 5em;
+  }
+
+  .cat-action__motto {
+    font-size: 1.6em;
+  }
+
+  .cat-action__button {
+    order: 0;
+    padding: 15px;
+    font-size: 1.6em;
+    width: auto;
+    margin: 0;
+  }
+
+  .cat-action__image {
+    margin: auto;
+  }
+}
