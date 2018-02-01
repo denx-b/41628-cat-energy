@@ -23,3 +23,25 @@
   font-family: "Arial", "Helvetica", sans-serif;
   color: $text-gray;
 }
+
+
+@media (min-width: $tablet-width) {
+  .catalog-additional__title {
+    font-size: 3em;
+    padding: 30px;
+  }
+
+  .catalog-additional__list {
+    width: calc(768px - 60px);
+    padding: 30px;
+  }
+
+  .catalog-additional__item {
+    padding: 27px 37px;
+    border: 1px solid $line-gray-1;
+
+    &:not(:last-child) {
+      border-bottom: none;
+    }
+  }
+}
