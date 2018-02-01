@@ -13,3 +13,9 @@
   align-items: center;
   padding: 25px 0;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright__name {
+    justify-content: space-around;
+  }
+}
