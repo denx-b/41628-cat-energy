@@ -1,10 +1,38 @@
 .select-program__title {
   font-size: 3em;
-  font-weight: 400;
   color: $text-black-1;
+  font-weight: 400;
+  width: calc(320px - 40px);
+  padding: 20px;
+  margin: auto;
 }
 
 .select-program__text {
   @include font-height(1.2em, 1.5em);
   text-transform: uppercase;
+  width: calc(320px - 40px);
+  padding: 0 20px 0;
+  margin: auto;
+}
+
+.select-program__form {
+  width: 320px;
+  margin: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .select-program__title {
+    font-size: 5em;
+    width: calc(768px - 60px);
+    padding: 30px;
+  }
+
+  .select-program__text {
+    width: calc(768px - 140px);
+    padding: 0 70px 20px;
+  }
+
+  .select-program__form {
+    width: 768px;
+  }
 }

@@ -76,27 +76,30 @@
           <textarea class="form-program__textarea" name="comment"
                     placeholder="Расскажите обо всех повадках кота"></textarea>
         </label>
-
-        <h3 class="form-program__title">Дополнительно</h3>
-        <label class="form-program__label-block">
+      </fieldset>
+      <div class="form-program__additional">
+        <h3 class="form-program__title form-program__title--max">Дополнительно</h3>
+        <label class="form-program__label-block form-program__label-block--half">
           <input class="form-program__checkbox" name="additional[]" value="1" type="checkbox">
           <span class="form-program__label">Сахарозаменитель</span>
         </label>
-        <label class="form-program__label-block">
+        <label class="form-program__label-block form-program__label-block--half">
           <input class="form-program__checkbox" name="additional[]" value="2" type="checkbox">
           <span class="form-program__label">Питьевая вода</span>
         </label>
-        <label class="form-program__label-block">
+        <label class="form-program__label-block form-program__label-block--half">
           <input class="form-program__checkbox" name="additional[]" value="3" type="checkbox">
           <span class="form-program__label">Молоко</span>
         </label>
-        <label class="form-program__label-block">
+        <label class="form-program__label-block form-program__label-block--half">
           <input class="form-program__checkbox" name="additional[]" value="4" type="checkbox">
           <span class="form-program__label">Витамины</span>
         </label>
-      </fieldset>
-      <input class="form-program__button button" type="submit" value="Отправить заявку">
-      <span class="form-program__required-label">* — Обязательные поля</span>
+      </div>
+      <div class="form-program_wrapper-button">
+        <input class="form-program__button button" type="submit" value="Отправить заявку">
+        <span class="form-program__required-label">* — Обязательные поля</span>
+      </div>
     </form>
   </section>
 </main>
