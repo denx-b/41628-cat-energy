@@ -41,3 +41,15 @@
     padding: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    width: calc(1300px - 80px);
+    padding: 40px;
+    margin: auto;
+  }
+
+  .advantages__item {
+    width: 25%;
+  }
+}

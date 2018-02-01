@@ -90,3 +90,10 @@
     margin-left: auto;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .example__wrapper {
+    width: calc(1300px - 80px);
+    padding: 40px;
+  }
+}
