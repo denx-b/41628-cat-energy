@@ -28,3 +28,42 @@
   font-family: "Arial", "Helvetica", sans-serif;
   color: $text-gray;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog__title {
+    font-size: 5em;
+    padding: 30px;
+  }
+
+  .catalog__list {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalog__item {
+    width: calc(50% - 136px);
+    margin: 30px;
+    padding: 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: $background-gray;
+  }
+
+  .catalog__link {
+    text-align: center;
+  }
+
+  .catalog__item-title {
+    text-align: center;
+  }
+
+  .catalog__properties {
+    width: 100%;
+  }
+
+  .catalog__right-col {
+    text-align: right;
+  }
+}
