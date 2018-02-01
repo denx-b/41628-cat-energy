@@ -1,16 +1,29 @@
+.catalog-additional {
+  width: calc(320px - 40px);
+  padding: 20px;
+  margin: auto;
+}
+
 .catalog-additional__title {
   font-size: 2em;
   color: $text-black-1;
   font-weight: 400;
+  padding: 0 20px;
 }
 
 .catalog-additional__list {
   @include list-reset;
 }
 
+.catalog-additional__item {
+  border-bottom: 1px solid $line-gray-1;
+  padding-bottom: 15px;
+}
+
 .catalog-additional__item-title {
-  font-size: 1.4em;
+  font-size: 1.33em;
   font-weight: 400;
+  margin: 10px 0;
 }
 
 .catalog-additional__item-link {
@@ -24,15 +37,20 @@
   color: $text-gray;
 }
 
+.catalog-additional__offer {
+  height: 289px;
+}
+
 @media (min-width: $tablet-width) {
-  .catalog-additional__title {
-    font-size: 3em;
+  .catalog-additional {
+    width: calc(768px - 60px);
     padding: 30px;
   }
 
-  .catalog-additional__list {
-    width: calc(768px - 60px);
+  .catalog-additional__title {
+    font-size: 3em;
     padding: 30px;
+    margin: 0;
   }
 
   .catalog-additional__item {
@@ -42,5 +60,64 @@
     &:not(:last-child) {
       border-bottom: none;
     }
+  }
+
+  .catalog-additional__offer {
+    margin-top: 70px;
+    height: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-additional {
+    width: calc(1300px - 80px);
+    padding: 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalog-additional__wrapper {
+    width: 895px;
+    margin-right: 40px;
+  }
+
+  .catalog-additional__offer {
+    width: 245px;
+    margin: 0 0 0 40px;
+    height: auto;
+  }
+
+  .catalog-additional__title {
+    flex-grow: 5;
+    width: 100%;
+    padding: 0 0 20px 0;
+  }
+
+  .catalog-additional__list {
+    margin: 0;
+  }
+
+  .catalog-additional__item {
+    padding: 10px 0;
+    border: none;
+    border-top: 1px solid $line-gray-1;
+    border-bottom: 1px solid $line-gray-1;
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      border-bottom: none;
+    }
+  }
+
+  .catalog-additional__item-title {
+    width: 325px;
+  }
+
+  .catalog-additional__order {
+    padding: 10px 0;
+    display: block;
+    width: 245px;
+    margin-left: auto;
   }
 }

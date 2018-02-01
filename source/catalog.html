@@ -13,13 +13,13 @@
     <div class="main-nav__wrapper">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--logo">
+          <a class="main-nav__link main-nav__link--logo" href="index.html">
             <img class="main-nav__logo-image" src="img/icon-logo-mobile.svg" alt="">
             <img class="main-nav__logo-name" src="//placehold.it/101x18" alt="">
             <button class="main-nav__toggle" type="button">Открыть меню</button>
           </a>
         </li>
-        <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Главная</a></li>
+        <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="index.html">Главная</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="form.html">Подбор программы</a></li>
       </ul>
@@ -165,7 +165,7 @@
         <a class="catalog__order-link button" href="#">Заказать</a>
       </li>
       <li class="catalog__item">
-        <a class="catalog__link" href="#"><img src="//placehold.it/100x100" alt=""></a>
+        <a class="catalog__link catalog__link--more" href="#"><img src="//placehold.it/100x100" alt=""></a>
         <h3 class="catalog__item-title catalog__item-title--more"><a href="#" class="catalog__item-link">Показать еще 100500 товаров</a></h3>
         <span class="catalog__text-more">На самом деле вкусов гораздо больше!</span>
         <a class="more__button button button--gray" href="#">Показать все</a>
@@ -175,62 +175,63 @@
 
   <section class="catalog-additional">
     <h2 class="catalog-additional__title">Дополнительные товары</h2>
-    <ul class="catalog-additional__list">
-      <li class="catalog-additional__item">
-        <h3 class="catalog-additional__item-title">
-          <a class="catalog-additional__item-link" href="#">Сахарозаменитель</a>
-        </h3>
-        <table class="catalog-additional__properties">
-          <tr>
-            <td>1 Упаковка</td>
-            <td>100 Р.</td>
-          </tr>
-        </table>
-        <a class="catalog-additional__order button" href="#">Заказать</a>
-      </li>
-      <li class="catalog-additional__item">
-        <h3 class="catalog-additional__item-title">
-          <a class="catalog-additional__item-link" href="#">Питьевая вода</a>
-        </h3>
-        <table class="catalog-additional__properties">
-          <tr>
-            <td>2 литров</td>
-            <td>50 Р.</td>
-          </tr>
-        </table>
-        <a class="catalog-additional__order button" href="#">Заказать</a>
-      </li>
-      <li class="catalog-additional__item">
-        <h3 class="catalog-additional__item-title">
-          <a class="catalog-additional__item-link" href="#">Молоко</a>
-        </h3>
-        <table class="catalog-additional__properties">
-          <tr>
-            <td>1 литр</td>
-            <td>100 Р.</td>
-          </tr>
-        </table>
-        <a class="catalog-additional__order button" href="#">Заказать</a>
-      </li>
-      <li class="catalog-additional__item">
-        <h3 class="catalog-additional__item-title">
-          <a class="catalog-additional__item-link" href="#">Витамины</a>
-        </h3>
-        <table class="catalog-additional__properties">
-          <tr>
-            <td>1 упаковка (30 г)</td>
-            <td>300 Р.</td>
-          </tr>
-        </table>
-        <a class="catalog-additional__order button" href="#">Заказать</a>
-      </li>
-    </ul>
-  </section>
-
-  <section class="order-offer">
-    <div class="order-offer__wrapper">
-      <div class="order-offer__icon"></div>
-      <span class="order-offer__text">Закажите все и получите чехол для кота в подарок!</span>
+    <div class="catalog-additional__wrapper">
+      <ul class="catalog-additional__list">
+        <li class="catalog-additional__item">
+          <h3 class="catalog-additional__item-title">
+            <a class="catalog-additional__item-link" href="#">Сахарозаменитель</a>
+          </h3>
+          <table class="catalog-additional__properties">
+            <tr>
+              <td>1 Упаковка</td>
+              <td>100 Р.</td>
+            </tr>
+          </table>
+          <a class="catalog-additional__order button" href="#">Заказать</a>
+        </li>
+        <li class="catalog-additional__item">
+          <h3 class="catalog-additional__item-title">
+            <a class="catalog-additional__item-link" href="#">Питьевая вода</a>
+          </h3>
+          <table class="catalog-additional__properties">
+            <tr>
+              <td>2 литров</td>
+              <td>50 Р.</td>
+            </tr>
+          </table>
+          <a class="catalog-additional__order button" href="#">Заказать</a>
+        </li>
+        <li class="catalog-additional__item">
+          <h3 class="catalog-additional__item-title">
+            <a class="catalog-additional__item-link" href="#">Молоко</a>
+          </h3>
+          <table class="catalog-additional__properties">
+            <tr>
+              <td>1 литр</td>
+              <td>100 Р.</td>
+            </tr>
+          </table>
+          <a class="catalog-additional__order button" href="#">Заказать</a>
+        </li>
+        <li class="catalog-additional__item">
+          <h3 class="catalog-additional__item-title">
+            <a class="catalog-additional__item-link" href="#">Витамины</a>
+          </h3>
+          <table class="catalog-additional__properties">
+            <tr>
+              <td>1 упаковка (30 г)</td>
+              <td>300 Р.</td>
+            </tr>
+          </table>
+          <a class="catalog-additional__order button" href="#">Заказать</a>
+        </li>
+      </ul>
+    </div>
+    <div class="catalog-additional__offer order-offer">
+      <div class="order-offer__wrapper">
+        <div class="order-offer__icon"></div>
+        <span class="order-offer__text">Закажите все и получите чехол для кота в подарок!</span>
+      </div>
     </div>
   </section>
 </main>

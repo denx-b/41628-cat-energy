@@ -118,7 +118,10 @@
 
   .main-nav__link {
     font-size: 1.6em;
-    color: $text-white;
+
+    &--main {
+      color: $text-white;
+    }
   }
 
   .main-nav__item {

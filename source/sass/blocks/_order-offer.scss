@@ -1,3 +1,12 @@
+.order-offer {
+  background: $background-green url("../img/gift-photo-mobile@1x.jpg") no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .order-offer__text {
   font-size: 1.4em;
   color: $text-white;
@@ -6,25 +15,20 @@
 
 @media (min-width: $tablet-width) {
   .order-offer {
-    width: calc(768px - 60px);
-    padding: 30px;
+    background-position: left -354px;
   }
 
   .order-offer__wrapper {
-    background: $background-green;
-    height: 200px;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
   }
+}
 
-  .catalog-additional__item {
-    padding: 27px 37px;
-    border: 1px solid $line-gray-1;
 
-    &:not(:last-child) {
-      border-bottom: none;
-    }
+@media (min-width: $desktop-width) {
+  .order-offer {
+    background-size: 0;
   }
 }
