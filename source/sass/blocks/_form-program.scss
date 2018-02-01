@@ -91,10 +91,44 @@
     margin: 0 30px 0 0;
   }
 
-  .form-program_wrapper-button {
+  .form-program__wrapper-button {
     width: calc(768px - 140px);
     padding: 0 70px;
     display: flex;
     align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-program__group {
+    width: auto;
+    padding: 0 40px;
+
+    &--half {
+      width: 50%;
+    }
+
+    &--master {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .form-program__name-task-group {
+    display: flex;
+  }
+
+  .form-program__additional {
+    width: auto;
+    padding: 0 40px;
+  }
+
+  .form-program__additional .form-program__label-block--half {
+    width: 25%;
+  }
+
+  .form-program__wrapper-button {
+    width: auto;
+    padding: 0 40px;
   }
 }

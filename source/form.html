@@ -14,7 +14,7 @@
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link main-nav__link--logo" href="index.html">
-            <img class="main-nav__logo-image" src="//placehold.it/33x38" alt="">
+            <img class="main-nav__logo-image" src="img/icon-logo-mobile.svg" alt="">
             <img class="main-nav__logo-name" src="//placehold.it/101x18" alt="">
             <button class="main-nav__toggle" type="button">Открыть меню</button>
           </a>
@@ -32,51 +32,54 @@
     <h1 class="select-program__title">Подбор программы</h1>
     <p class="select-program__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
     <form class="select-program__form form-program" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="form-program__group">
-        <label class="form-program__label-block">
-          <span class="form-program__label">Имя:*</span>
-          <input class="form-program__input" type="text" name="name" value="Барсик">
-        </label>
-        <label class="form-program__label-block">
-          <span class="form-program__label">Вес (кг):*</span>
-          <input class="form-program__input" type="text" name="weight">
-        </label>
-        <label class="form-program__label-block">
-          <span class="form-program__label">Возраст (лет):*</span>
-          <input class="form-program__input" type="text" name="age">
-        </label>
-      </fieldset>
-      <fieldset class="form-program__group">
-        <label class="form-program__label-block">
-          <input class="form-program__radio" name="task" type="radio">
-          <span class="form-program__label">Похудение</span>
-        </label>
-        <label class="form-program__label-block">
-          <input class="form-program__radio" name="task" type="radio">
-          <span class="form-program__label">Набор массы</span>
-        </label>
-        <label class="form-program__label-block">
-          <input class="form-program__radio" name="task" type="radio">
-          <span class="form-program__label">Не знаю (нужен ваш совет)</span>
-        </label>
-      </fieldset>
-      <fieldset class="form-program__group">
-        <h3 class="form-program__title">Контактные данные (владельца кота)</h3>
-        <label class="form-program__label-block">
+      <div class="form-program__name-task-group">
+        <div class="form-program__group form-program__group--half">
+          <label class="form-program__label-block">
+            <span class="form-program__label">Имя:*</span>
+            <input class="form-program__input" type="text" name="name" value="Барсик">
+          </label>
+          <label class="form-program__label-block">
+            <span class="form-program__label">Вес (кг):*</span>
+            <input class="form-program__input" type="text" name="weight">
+          </label>
+          <label class="form-program__label-block">
+            <span class="form-program__label">Возраст (лет):*</span>
+            <input class="form-program__input" type="text" name="age">
+          </label>
+        </div>
+        <div class="form-program__group form-program__group--half">
+          <label class="form-program__label-block">
+            <input class="form-program__radio" name="task" type="radio">
+            <span class="form-program__label">Похудение</span>
+          </label>
+          <label class="form-program__label-block">
+            <input class="form-program__radio" name="task" type="radio">
+            <span class="form-program__label">Набор массы</span>
+          </label>
+          <label class="form-program__label-block">
+            <input class="form-program__radio" name="task" type="radio">
+            <span class="form-program__label">Не знаю (нужен ваш совет)</span>
+          </label>
+        </div>
+      </div>
+      <div class="form-program__group form-program__group--master">
+        <h3 class="form-program__title form-program__title--max">Контактные данные (владельца кота)</h3>
+        <label class="form-program__label-block form-program__label-block--half">
           <span class="form-program__label">E-mail:*</span>
           <input class="form-program__input form-program__input--email" type="email" name="email">
         </label>
-        <label class="form-program__label-block">
+        <label class="form-program__label-block form-program__label-block--half">
           <span class="form-program__label">Телефон:*</span>
           <input class="form-program__input form-program__input--phone" type="tel" name="phone">
         </label>
-
+      </div>
+      <div class="form-program__group">
         <h3 class="form-program__title">Комментарий</h3>
         <label>
           <textarea class="form-program__textarea" name="comment"
                     placeholder="Расскажите обо всех повадках кота"></textarea>
         </label>
-      </fieldset>
+      </div>
       <div class="form-program__additional">
         <h3 class="form-program__title form-program__title--max">Дополнительно</h3>
         <label class="form-program__label-block form-program__label-block--half">
@@ -96,7 +99,7 @@
           <span class="form-program__label">Витамины</span>
         </label>
       </div>
-      <div class="form-program_wrapper-button">
+      <div class="form-program__wrapper-button">
         <input class="form-program__button button" type="submit" value="Отправить заявку">
         <span class="form-program__required-label">* — Обязательные поля</span>
       </div>

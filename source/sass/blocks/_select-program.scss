@@ -36,3 +36,19 @@
     width: 768px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .select-program__title {
+    width: calc(1300px - 80px);
+    padding: 0 40px;
+  }
+
+  .select-program__text {
+    width: calc(1300px - 80px);
+    padding: 0 40px;
+  }
+
+  .select-program__form {
+    width: 1300px;
+  }
+}
