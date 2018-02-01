@@ -5,7 +5,6 @@
 
 .main-nav__list {
   @include list-reset;
-  background-color: $background-base;
   display: flex;
   flex-direction: column;
 }
@@ -36,6 +35,8 @@
 
 .main-nav__logo-image {
   margin-left: -13px;
+  width: 33px;
+  height: 38px;
 }
 
 .main-nav__logo-name {
@@ -59,7 +60,9 @@
   }
 
   .main-nav__list {
-    width: 708px;
+    width: calc(100% - 60px);
+    max-width: calc(768px - 60px);
+    padding: 0 30px;
     margin: auto;
     flex-direction: row;
     justify-content: space-around;
@@ -68,7 +71,7 @@
 
   .main-nav__item {
     border-bottom: none;
-    flex-grow: 1;
+    flex-grow: 2;
   }
 
   .main-nav__item:nth-child(1) {
@@ -88,6 +91,8 @@
   .main-nav__logo-image {
     margin-left: 0;
     margin-right: 23px;
+    width: 70px;
+    height: 58px;
   }
 
   .main-nav__logo-name {
@@ -97,5 +102,36 @@
   .main-nav__toggle {
     margin-right: 0;
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    padding-top: 43px;
+  }
+
+  .main-nav__list {
+    width: calc(100% - 220px);
+    max-width: inherit;
+    padding: 0 110px;
+  }
+
+  .main-nav__link {
+    font-size: 1.6em;
+    color: $text-white;
+  }
+
+  .main-nav__item {
+    flex-grow: 1;
+  }
+
+  .main-nav__item:not(:first-child) {
+    flex-grow: 0;
+    margin-left: 34px;
+  }
+
+  .main-nav__logo-image {
+    margin-right: 14px;
+    height: 59px;
   }
 }

@@ -14,10 +14,7 @@
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--logo">
-              <picture class="main-nav__logo-image">
-                <source srcset="//placehold.it/70x58" media="(min-width: 768px)">
-                <img src="//placehold.it/33x38" alt="">
-              </picture>
+              <img class="main-nav__logo-image" src="img/icon-logo-mobile.svg" alt="">
               <img class="main-nav__logo-name" src="//placehold.it/101x18" alt="">
               <button class="main-nav__toggle" type="button">Открыть меню</button>
             </a>
@@ -32,10 +29,16 @@
 
   <main class="page-main">
     <section class="cat-action">
-      <h1 class="cat-action__title">Функциональное питание для котов</h1>
-      <p class="cat-action__motto">Занялся собой? Займись котом!</p>
-      <a class="cat-action__button button button--text-small" href="form.html">Подобрать программу</a>
-      <img class="cat-action__image" src="img/index-can-mobile@1x.png" alt="">
+      <div class="cat-action__wrapper">
+        <h1 class="cat-action__title">Функциональное питание для котов</h1>
+        <p class="cat-action__motto">Занялся собой? Займись котом!</p>
+        <a class="cat-action__button button button--text-small" href="form.html">Подобрать программу</a>
+        <picture class="cat-action__image">
+          <source srcset="img/index-can-desktop@1x.png" media="(min-width: 1440px)">
+          <source srcset="img/index-can-tablet@1x.jpg" media="(min-width: 768px)">
+          <img src="img/index-can-mobile@1x.png" alt="">
+        </picture>
+      </div>
     </section>
 
     <section class="categories">

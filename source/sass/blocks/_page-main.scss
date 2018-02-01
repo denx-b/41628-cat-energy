@@ -5,3 +5,10 @@
 .page-main__advantages {
   margin-bottom: 31px;
 }
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    position: absolute;
+    top: 0;
+  }
+}
