@@ -3,3 +3,28 @@
   color: $text-white;
   font-family: "Arial", "Helvetica", sans-serif;
 }
+
+@media (min-width: $tablet-width) {
+  .order-offer {
+    width: calc(768px - 60px);
+    padding: 30px;
+  }
+
+  .order-offer__wrapper {
+    background: $background-green;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .catalog-additional__item {
+    padding: 27px 37px;
+    border: 1px solid $line-gray-1;
+
+    &:not(:last-child) {
+      border-bottom: none;
+    }
+  }
+}
