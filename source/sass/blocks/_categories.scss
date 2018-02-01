@@ -74,3 +74,24 @@
     padding-right: 220px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .categories__list {
+    display: flex;
+    width: calc(1300px);
+    margin: auto;
+  }
+
+  .categories__item {
+    width: auto;
+    margin: 40px;
+  }
+
+  .categories__title {
+    justify-content: flex-start;
+  }
+
+  .categories__image {
+    order: 0;
+  }
+}
