@@ -1,0 +1,136 @@
+.form-program__group,
+.form-program__additional,
+.form-program__wrapper-button {
+  border: none;
+  width: calc(320px - 40px);
+  padding: 0 20px;
+  margin: 0;
+}
+
+.form-program__label {
+  font-size: 1.4em;
+}
+
+/*
+  Форматирование формы временное
+ */
+.form-program__label-block {
+  text-transform: uppercase;
+  color: $text-black-1;
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    flex-grow: 1;
+    margin-left: 10px;
+    padding: 10px;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    color: $text-gray;
+  }
+}
+
+.form-program__title {
+  font-size: 2em;
+  font-weight: 400;
+  color: $text-black-1;
+}
+
+.form-program__textarea {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  color: $text-gray;
+  width: calc(100% - 20px);
+  height: 130px;
+  padding: 10px;
+}
+
+.form-program__button {
+  font-family: "Oswald", sans-serif;
+  border: none;
+  width: 280px;
+  margin: auto;
+}
+
+.form-program__required-label {
+  font-family: "Arial", "Helvetica", sans-serif;
+  color: $text-gray;
+  display: block;
+  margin-top: 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-program__group {
+    width: calc(768px - 140px);
+    padding: 0 70px;
+  }
+
+  .form-program__additional {
+    width: calc(768px - 140px);
+    padding: 0 70px;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-program__title--max {
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  .form-program__label-block--half {
+    width: 50%;
+  }
+
+  .form-program__button {
+    width: auto;
+    padding: 15px 60px;
+    margin: 0 30px 0 0;
+  }
+
+  .form-program__wrapper-button {
+    width: calc(768px - 140px);
+    padding: 0 70px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-program__group {
+    width: auto;
+    padding: 0 40px;
+
+    &--half {
+      width: 50%;
+    }
+
+    &--master {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .form-program__name-task-group {
+    display: flex;
+  }
+
+  .form-program__additional {
+    width: auto;
+    padding: 0 40px;
+  }
+
+  .form-program__additional .form-program__label-block--half {
+    width: 25%;
+  }
+
+  .form-program__wrapper-button {
+    width: auto;
+    padding: 0 40px;
+  }
+}

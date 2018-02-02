@@ -1,0 +1,140 @@
+.main-nav {
+  width: 320px;
+  margin: auto;
+}
+
+.main-nav__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav__item {
+  text-align: center;
+  border-bottom: 1px solid $line-gray-2;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  font-weight: 500;
+  color: $text-black-1;
+  text-align: center;
+  padding: 21px 0;
+  display: inline-block;
+  width: 100%;
+
+  &--logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 13px 0 14px;
+  }
+}
+
+.main-nav__logo-image {
+  margin-left: -13px;
+  width: 33px;
+  height: 38px;
+}
+
+.main-nav__logo-name {
+  margin-left: -10px;
+}
+
+.main-nav__toggle {
+  margin-right: -9px;
+  overflow: hidden;
+  text-indent: -9999px;
+  background: $text-black-2;
+  border: none;
+  width: 18px;
+  height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: auto;
+    padding-top: 10px;
+  }
+
+  .main-nav__list {
+    width: calc(100% - 60px);
+    max-width: calc(768px - 60px);
+    padding: 0 30px;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .main-nav__item {
+    border-bottom: none;
+    flex-grow: 2;
+  }
+
+  .main-nav__item:nth-child(1) {
+    flex-grow: 4;
+  }
+
+  .main-nav__link {
+    font-weight: normal;
+    font-size: 1.4em;
+
+    &--logo {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+
+  .main-nav__logo-image {
+    margin-left: 0;
+    margin-right: 23px;
+    width: 70px;
+    height: 58px;
+  }
+
+  .main-nav__logo-name {
+    margin-left: 0;
+  }
+
+  .main-nav__toggle {
+    margin-right: 0;
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    padding-top: 43px;
+  }
+
+  .main-nav__list {
+    width: calc(100% - 220px);
+    max-width: inherit;
+    padding: 0 110px;
+  }
+
+  .main-nav__link {
+    font-size: 1.6em;
+
+    &--main {
+      color: $text-white;
+    }
+  }
+
+  .main-nav__item {
+    flex-grow: 1;
+  }
+
+  .main-nav__item:not(:first-child) {
+    flex-grow: 0;
+    margin-left: 34px;
+  }
+
+  .main-nav__logo-image {
+    margin-right: 14px;
+    height: 59px;
+  }
+}

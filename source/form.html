@@ -3,21 +3,25 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
 
 <header class="page-header">
-  <a class="page-header__logo" href="index.html">
-    <img class="page-header__logo-image" src="http://placehold.it/33x38" alt="">
-    <img class="page-header__logo-name" src="http://placehold.it/101x18" alt="">
-  </a>
   <nav class="page-header__main-nav main-nav">
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
     <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active"><a href="index.html">Главная</a></li>
-        <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
-        <li class="site-list__item"><a>Подбор программы</a></li>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--logo" href="index.html">
+            <img class="main-nav__logo-image" src="img/icon-logo-mobile.svg" alt="">
+            <img class="main-nav__logo-name" src="//placehold.it/101x18" alt="">
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+          </a>
+        </li>
+        <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="index.html">Главная</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
+        <li class="main-nav__item"><a class="main-nav__link">Подбор программы</a></li>
       </ul>
     </div>
   </nav>
@@ -28,71 +32,77 @@
     <h1 class="select-program__title">Подбор программы</h1>
     <p class="select-program__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
     <form class="select-program__form form-program" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="form-program__group">
-        <label class="form-program__label">
-          Имя:*
-          <input class="form-program__input" type="text" name="name">
-        </label>
-        <label class="form-program__label">
-          Вес:*
-          <input class="form-program__input" type="text" name="weight">
-        </label>
-        <label class="form-program__label">
-          Возраст (лет):*
-          <input class="form-program__input" type="text" name="age">
-        </label>
-      </fieldset>
-      <fieldset class="form-program__group">
-        <label class="form-program__label">
-          <input class="form-program__radio" name="task" type="radio">
-          Похудение
-        </label>
-        <label class="form-program__label">
-          <input class="form-program__radio" name="task" type="radio">
-          Набор массы
-        </label>
-        <label class="form-program__label">
-          <input class="form-program__radio" name="task" type="radio">
-          Не знаю (нужен ваш совет)
-        </label>
-      </fieldset>
-      <fieldset class="form-program__group">
-        <h3 class="form-program__title">Контактные данные (владельца кота)</h3>
-        <label class="form-program__label">
-          E-mail:*
+      <div class="form-program__name-task-group">
+        <div class="form-program__group form-program__group--half">
+          <label class="form-program__label-block">
+            <span class="form-program__label">Имя:*</span>
+            <input class="form-program__input" type="text" name="name" value="Барсик">
+          </label>
+          <label class="form-program__label-block">
+            <span class="form-program__label">Вес (кг):*</span>
+            <input class="form-program__input" type="text" name="weight">
+          </label>
+          <label class="form-program__label-block">
+            <span class="form-program__label">Возраст (лет):*</span>
+            <input class="form-program__input" type="text" name="age">
+          </label>
+        </div>
+        <div class="form-program__group form-program__group--half">
+          <label class="form-program__label-block">
+            <input class="form-program__radio" name="task" type="radio">
+            <span class="form-program__label">Похудение</span>
+          </label>
+          <label class="form-program__label-block">
+            <input class="form-program__radio" name="task" type="radio">
+            <span class="form-program__label">Набор массы</span>
+          </label>
+          <label class="form-program__label-block">
+            <input class="form-program__radio" name="task" type="radio">
+            <span class="form-program__label">Не знаю (нужен ваш совет)</span>
+          </label>
+        </div>
+      </div>
+      <div class="form-program__group form-program__group--master">
+        <h3 class="form-program__title form-program__title--max">Контактные данные (владельца кота)</h3>
+        <label class="form-program__label-block form-program__label-block--half">
+          <span class="form-program__label">E-mail:*</span>
           <input class="form-program__input form-program__input--email" type="email" name="email">
         </label>
-        <label class="form-program__label">
-          Телефон:*
+        <label class="form-program__label-block form-program__label-block--half">
+          <span class="form-program__label">Телефон:*</span>
           <input class="form-program__input form-program__input--phone" type="tel" name="phone">
         </label>
-
+      </div>
+      <div class="form-program__group">
         <h3 class="form-program__title">Комментарий</h3>
         <label>
           <textarea class="form-program__textarea" name="comment"
                     placeholder="Расскажите обо всех повадках кота"></textarea>
         </label>
-
-        <h3 class="form-program__title">Дополнительно</h3>
-        <label class="form-program__label">
+      </div>
+      <div class="form-program__additional">
+        <h3 class="form-program__title form-program__title--max">Дополнительно</h3>
+        <label class="form-program__label-block form-program__label-block--half">
           <input class="form-program__checkbox" name="additional[]" value="1" type="checkbox">
-          Сахарозаменитель
+          <span class="form-program__label">Сахарозаменитель</span>
         </label>
-        <label class="form-program__label">
+        <label class="form-program__label-block form-program__label-block--half">
           <input class="form-program__checkbox" name="additional[]" value="2" type="checkbox">
-          Питьевая вода
+          <span class="form-program__label">Питьевая вода</span>
         </label>
-        <label class="form-program__label">
+        <label class="form-program__label-block form-program__label-block--half">
           <input class="form-program__checkbox" name="additional[]" value="3" type="checkbox">
-          Молоко
+          <span class="form-program__label">Молоко</span>
         </label>
-        <label class="form-program__label">
+        <label class="form-program__label-block form-program__label-block--half">
           <input class="form-program__checkbox" name="additional[]" value="4" type="checkbox">
-          Витамины
+          <span class="form-program__label">Витамины</span>
         </label>
-      </fieldset>
-      <input class="form-program__button button" type="submit" value="Отправить заявку">
-      <span class="form-program__required-label">* — Обязательные поля</span>
+      </div>
+      <div class="form-program__wrapper-button">
+        <input class="form-program__button button" type="submit" value="Отправить заявку">
+        <span class="form-program__required-label">* — Обязательные поля</span>
+      </div>
     </form>
   </section>
 </main>
@@ -101,38 +111,38 @@
   <section class="contacts">
     <h2 class="visually-hidden">Контакты</h2>
     <header class="contacts__header">
-      <span class="contacts__label">приглашаем к сотрудничеству дилеров!</span>
-      <span class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+      <span class="contacts__label">приглашаем<br> к сотрудничеству<br> дилеров!</span>
+      <span class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</span>
     </header>
     <div class="contacts__map"></div>
   </section>
 
-  <section class="page-footer__logo">
-    <a href="index.html">
-      <img class="page-footer__image" src="http://placehold.it/128x24" alt="">
-    </a>
-  </section>
-
-  <section class="page-footer__social social">
-    <ul class="social__list">
-      <li class="social__item">
-        <a class="social__link social__link--vkontakte">Мы в Вконтакте</a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--instagram">Мы в Инстаграм</a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--facebook">Мы на Фейсбук</a>
-      </li>
-    </ul>
-  </section>
-
-  <section class="page-footer__copyright copyright">
-    <a class="copyright__name" href="https://htmlacademy.ru/intensive/adaptive">
-      <span>HTML Academy</span>
-      <img src="http://placehold.it/27x34" alt="">
-    </a>
-  </section>
+  <div class="page-footer__wrapper">
+    <section class="page-footer__logo">
+      <a href="index.html">
+        <img class="page-footer__image" src="//placehold.it/128x24" alt="">
+      </a>
+    </section>
+    <section class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte">Мы в Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram">Мы в Инстаграм</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook">Мы на Фейсбук</a>
+        </li>
+      </ul>
+    </section>
+    <section class="page-footer__copyright copyright">
+      <a class="copyright__name" href="https://htmlacademy.ru/intensive/adaptive">
+        <span>HTML Academy</span>
+        <img src="//placehold.it/27x34" alt="">
+      </a>
+    </section>
+  </div>
 </footer>
 </body>
 </html>

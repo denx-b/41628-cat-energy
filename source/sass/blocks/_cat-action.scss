@@ -1,11 +1,114 @@
 .cat-action {
   color: $text-white;
+  text-align: center;
+  position: relative;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  margin: auto;
+}
+
+.cat-action__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cat-action__title {
-  font-size: 3em;
+  @include font-height(2.9em, 1em);
+  font-weight: 400;
+  margin: 0;
+  padding: 27px 0 11px 0;
 }
 
 .cat-action__motto {
-  font-size: 1.2em;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+}
+
+.cat-action__image {
+  margin-bottom: 3px;
+}
+
+.cat-action__button {
+  order: 1;
+  width: 88%;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .cat-action {
+    background: none;
+    color: $text-black-1;
+    width: 528px;
+    margin: auto;
+  }
+
+  .cat-action__wrapper {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .cat-action__title {
+    font-size: 5em;
+  }
+
+  .cat-action__motto {
+    font-size: 1.6em;
+  }
+
+  .cat-action__button {
+    order: 0;
+    padding: 15px;
+    font-size: 1.6em;
+    width: auto;
+    margin: 0;
+  }
+
+  .cat-action__image {
+    margin: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cat-action {
+    width: auto;
+    padding: 140px 0;
+    background: url("../img/index-background-desktop@1x.jpg") no-repeat right top;
+  }
+
+  .cat-action__wrapper {
+    display: block;
+    width: calc(100% - 518px);
+    padding: 55px 328px 0 190px;
+    margin: auto;
+  }
+
+  .cat-action__content {
+    width: 895px;
+    padding-left: 120px;
+  }
+
+  .cat-action__title {
+    width: 435px;
+    font-size: 4.8em;
+  }
+
+  .cat-action__motto {
+    width: 435px;
+    margin-top: 29px;
+  }
+
+  .cat-action__button {
+    margin-top: 24px;
+    padding: 15px 26px;
+  }
+
+  .cat-action__image {
+    float: right;
+    margin-top: -290px;
+  }
 }

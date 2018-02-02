@@ -1,8 +1,18 @@
 .button {
   color: $text-white;
-  font-size: 1.2em;
+  font-size: 1.4em;
+  text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
   background-color: $background-green;
+  width: 100%;
+  padding: 10px 0;
+  display: inline-block;
+
+  &--text-small {
+    font-size: 1.12em;
+    padding: 12px 0;
+  }
 
   &--gray {
     color: $text-black-2;
