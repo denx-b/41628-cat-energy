@@ -1,0 +1,34 @@
+.toggle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 207px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.toggle__label {
+  font-size: 1.28em;
+  text-transform: uppercase;
+  color: $text-black-1;
+}
+
+.toggle__wrapper {
+  background-color: $background-base;
+  border: 1px solid $line-gray-4;
+  border-radius: 6px;
+  width: 73px;
+  height: 6px;
+  padding: 3px 5px;
+  display: flex;
+  align-items: center;
+  margin-left: 4px;
+}
+
+.toggle__bar {
+  display: block;
+  width: 50%;
+  height: 6px;
+  background-color: $background-green;
+  border-radius: 8px;
+}

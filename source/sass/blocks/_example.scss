@@ -1,36 +1,36 @@
 .example {
   background-color: $background-gray;
-}
-
-.example__wrapper {
-  width: 88%;
+  width: calc(320px - 40px);
+  padding: 17px 20px;
   margin: auto;
-  padding: 26px 0;
 }
 
 .example__image {
-  max-width: 100%;
-  margin: auto;
+  max-width: 330px;
+  margin: 36px -20px 0 -20px;
   display: block;
 }
 
 .example__title {
-  font-size: 3em;
+  font-size: 2.89em;
   font-weight: 400;
   color: $text-black-1;
   margin: 0;
 }
 
 .example__description {
-  @include font-height(1.2em, 1.5em);
+  @include font-height(1.12em, 1.34em);
   font-family: "Arial", "Helvetica", sans-serif;
   color: $text-gray;
+  margin-top: 33px;
+  padding-right: 1px;
 }
 
 .example__info-list {
   @include list-reset;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-top: 25px;
 }
 
 .example__info-item {
@@ -38,42 +38,48 @@
   flex-direction: column;
   align-items: center;
   border: 1px solid $line-gray-5;
-  border-radius: 8px;
-  padding: 10px;
-  margin-right: 15px;
+  border-radius: 2px;
+  padding: 12px 0 15px;
+  width: 122px;
+  position: relative;
 }
 
 .example__info-value {
-  font-size: 2em;
+  font-size: 1.9em;
   text-transform: uppercase;
   color: $text-black-1;
 }
 
 .example__info-label {
-  font-size: 1em;
+  @include font-height(0.97em, 1.1em);
   font-family: "Arial", "Helvetica", sans-serif;
   color: $text-gray;
+  background-color: $background-gray;
+  position: absolute;
+  bottom: -18px;
+  width: 60px;
+  padding: 0 15px;
+  text-align: center;
 }
 
 .example__price {
-  font-size: 1.2em;
+  font-size: 1.12em;
   text-transform: uppercase;
   text-align: center;
   color: $text-black-1;
+  margin-top: 36px;
 }
 
-.example__result {
-  display: flex;
-  justify-content: space-around;
-}
-
-.example__result-label {
-  font-size: 1.4em;
-  text-transform: uppercase;
-  color: $text-black-1;
+.example__toggle {
+  margin-top: 33px;
 }
 
 @media (min-width: $tablet-width) {
+  .example {
+    width: calc(768px - 60px);
+    padding: 17px 30px;
+  }
+
   .example__title {
     font-size: 5em;
   }

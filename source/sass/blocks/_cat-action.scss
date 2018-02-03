@@ -17,25 +17,25 @@
 }
 
 .cat-action__title {
-  @include font-height(2.9em, 1em);
+  @include font-height(2.89em, 1em);
   font-weight: 400;
   margin: 0;
   padding: 27px 0 11px 0;
 }
 
 .cat-action__motto {
-  font-size: 1.1em;
+  font-size: 1.12em;
   text-transform: uppercase;
   margin-bottom: 27px;
 }
 
 .cat-action__image {
-  margin-bottom: 3px;
+  margin-bottom: 1px;
 }
 
 .cat-action__button {
   order: 1;
-  width: 88%;
+  width: calc(320px - 40px);
   margin: 0 auto;
 }
 

@@ -9,9 +9,8 @@
 
 .categories__item {
   background-color: $background-gray;
-  width: calc(88% - 44px);
-  margin: 22px auto;
-  padding: 15px 22px 20px;
+  margin: 20px;
+  padding: 20px;
 }
 
 .categories__title {
@@ -19,40 +18,85 @@
   align-items: center;
 }
 
+.categories__image {
+  width: 50px;
+  height: 50px;
+  background: $background-green;
+  border-radius: 50%;
+  margin-left: 2px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+
+  &--slim::after {
+    background: url("../img/icon-cat-slim.svg") no-repeat center;
+    width: 35px;
+    height: 49px;
+    left: 8px;
+    top: -3px;
+  }
+
+  &--pro::after {
+    background: url("../img/icon-cat-pro.svg") no-repeat center;
+    width: 67px;
+    height: 28px;
+    left: -9px;
+    top: 11px;
+  }
+}
+
 .categories__title-text {
-  font-size: 1.8em;
+  font-size: 1.92em;
   font-weight: 400;
   text-transform: uppercase;
-  color: $text-black-1;
-  margin-left: 20px;
+  color: #111111;
+  margin: 16px 19px;
 }
 
 .categories__description {
   @include font-height(1.15em, 1.27em);
+  font-size: 1.12em;
+  line-height: 1.3em;
   font-family: "Arial", "Helvetica", sans-serif;
-  color: $text-gray;
-  border-bottom: 1px solid $line-gray-3;
-  margin-top: 11px;
+  color: #444444;
+  border-bottom: 1px solid #d9d9d9;
+  margin-top: 18px;
   padding-bottom: 22px;
 }
 
 .categories__link {
-  font-size: 1.3em;
+  font-size: 1.28em;
   text-transform: uppercase;
   text-decoration: none;
   color: $text-black-1;
   margin-top: 5px;
   display: inline-block;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../img/icon-right-arrow-long.svg") no-repeat center;
+    width: 24px;
+    height: 11px;
+    right: -36px;
+    top: 3px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .categories {
-    width: auto;
+    width: calc(768px - 60px);
+    padding: 0 30px;
   }
 
   .categories__item {
-    padding: 50px;
-    width: calc(88% - 100px);
+    margin: 20px 0;
   }
 
   .categories__image {

@@ -29,25 +29,27 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 13px 0 14px;
+    padding: 11px 0 16px;
   }
 }
 
 .main-nav__logo-image {
-  margin-left: -13px;
+  margin-left: -14px;
   width: 33px;
   height: 38px;
 }
 
 .main-nav__logo-name {
-  margin-left: -10px;
+  margin-left: -12px;
+  margin-top: 5px;
 }
 
 .main-nav__toggle {
-  margin-right: -9px;
+  background: url("../img/icon-close.svg");
+  margin-right: -11px;
+  margin-top: 3px;
   overflow: hidden;
   text-indent: -9999px;
-  background: $text-black-2;
   border: none;
   width: 18px;
   height: 18px;
@@ -97,6 +99,7 @@
 
   .main-nav__logo-name {
     margin-left: 0;
+    margin-top: 3px;
   }
 
   .main-nav__toggle {
