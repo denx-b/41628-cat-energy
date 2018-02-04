@@ -83,8 +83,18 @@
 @media (min-width: $desktop-width) {
   .cat-action {
     width: auto;
-    padding: 140px 0 93px;
-    background: url("../img/index-background-desktop@1x.jpg") no-repeat right top;
+    padding: 140px 0 53px;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: calc(50% - 40px);
+      background: $background-green-2 url("../img/index-background-desktop@1x.jpg") no-repeat right 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
   }
 
   .cat-action__wrapper {
@@ -92,6 +102,7 @@
     width: calc(100% - 518px);
     padding: 55px 328px 0 190px;
     margin: auto;
+    z-index: 1;
   }
 
   .cat-action__content {
