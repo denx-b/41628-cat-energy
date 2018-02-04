@@ -55,3 +55,34 @@
     background-image: url("../img/icon-fb-mobile.svg");
   }
 }
+
+@media (min-width: $tablet-width) {
+  $width: 60 + 164 + 164;
+
+  .social {
+    width: calc(768px - #{$width}px);
+  }
+
+  .social__link {
+    &--vkontakte::after {
+      width: 30px;
+      height: 16px;
+      left: 8px;
+      top: 12px;
+    }
+
+    &--instagram::after {
+      width: 23px;
+      height: 23px;
+      left: 12px;
+      top: 9px;
+    }
+
+    &--facebook::after {
+      width: 14px;
+      height: 28px;
+      left: 10px;
+      top: 5px;
+    }
+  }
+}

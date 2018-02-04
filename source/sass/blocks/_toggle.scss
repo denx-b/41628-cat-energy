@@ -32,3 +32,46 @@
   background-color: $background-green;
   border-radius: 8px;
 }
+
+@media (min-width: $tablet-width) {
+  .toggle {
+    width: 570px;
+    justify-content: space-between;
+  }
+
+  .toggle__wrapper {
+    border: none;
+    background: $background-gray-2;
+    width: 100%;
+    padding: 0;
+    margin: 0 24px;
+    position: relative;
+  }
+
+  .toggle__bar {
+    border: 1px solid $line-gray-4;
+    background: $background-base;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 15px);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: $background-green;
+      border-radius: 50%;
+      left: calc(50% - 4px);
+      top: calc(50% - 4px);
+    }
+  }
+
+  .toggle__label {
+    font-size: 1.56em;
+  }
+}

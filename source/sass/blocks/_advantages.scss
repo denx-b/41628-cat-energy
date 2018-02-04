@@ -62,21 +62,49 @@
   }
 
   .advantages__title {
-    font-size: 5em;
+    font-size: 4.8em;
+    margin-top: 40px;
   }
 
   .advantages__list {
     display: flex;
     flex-basis: 50%;
     flex-wrap: wrap;
+    justify-content: space-between;
+    counter-reset: item_number;
+    border-bottom: 1px solid $line-gray-2;
   }
 
   .advantages__item {
-    width: 50%;
+    width: calc(46% - 2px);
+    height: 317px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      counter-increment: item_number; /* Увеличиваем значение счетчика */
+      content: counter(item_number); /* Выводим число */
+      color: $background-gray;
+      left: 118px;
+      top: -30px;
+      font-size: 22.4em;
+    }
+  }
+
+  .advantages__icon {
+    width: 80px;
+    height: 80px;
+    margin-top: 30px;
   }
 
   .advantages__description {
+    @include font-height(1.28em, 1.5em);
     padding: 0;
+    margin-top: 32px;
+    width: 245px;
+    z-index: 1;
   }
 }
 

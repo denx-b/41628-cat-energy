@@ -30,7 +30,8 @@
 
 @media (min-width: $tablet-width) {
   .contacts__header {
-    padding: 50px 0;
+    width: calc(768px - 140px);
+    padding: 8px 70px 32px;
   }
 
   .contacts__label {
@@ -39,7 +40,13 @@
   }
 
   .contacts__address {
-    width: 160px;
+    @include font-height(1.3em, 1.25em);
+    width: 190px;
+    margin-right: 0;
     text-align: right;
+  }
+
+  .contacts__map {
+    height: 396px;
   }
 }

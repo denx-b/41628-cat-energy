@@ -11,6 +11,8 @@
   background-color: $background-gray;
   margin: 20px;
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .categories__title {
@@ -23,8 +25,8 @@
   height: 50px;
   background: $background-green;
   border-radius: 50%;
-  margin-left: 2px;
   position: relative;
+  margin: 6px 0 0 2px;
 
   &::after {
     content: "";
@@ -95,12 +97,37 @@
     padding: 0 30px;
   }
 
+  .categories__list {
+    margin-top: -2px;
+  }
+
+
   .categories__item {
-    margin: 20px 0;
+    margin: 0 0 30px 0;
+    padding: 0 52px 60px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .categories__image {
-    order: 1;
+    order: 5;
+    width: 200px;
+    height: 200px;
+    margin: -22px 10px 0 0;
+
+    &--slim::after {
+      width: 140px;
+      height: 194px;
+      left: 30px;
+      top: -13px;
+    }
+
+    &--pro::after {
+      width: 268px;
+      height: 112px;
+      left: -36px;
+      top: 44px;
+    }
   }
 
   .categories__title {
@@ -108,18 +135,38 @@
   }
 
   .categories__title-text {
-    margin: 0;
-    font-size: 3em;
+    margin: 74px 0 0 0;
+    font-size: 2.9em;
+    width: 100%;
   }
 
   .categories__description {
-    @include font-height(1.2em, 1.4em);
+    @include font-height(1.28em, 1.5em);
     border-bottom: none;
-    padding-right: 220px;
+    width: calc(100% - 250px);
+    margin-top: 23px;
+    flex-grow: 1;
+    padding-right: 14px;
+  }
+
+  .categories__link {
+    order: 6;
+    font-size: 1.6em;
+    margin-top: -4px;
+
+    &::after {
+      right: -48px;
+      top: 6px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .categories {
+    width: calc(1440px - 70px);
+    padding: 0 70px;
+  }
+
   .categories__list {
     display: flex;
     width: calc(1300px);

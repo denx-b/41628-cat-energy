@@ -45,6 +45,7 @@
     color: $text-black-1;
     width: 528px;
     margin: auto;
+    align-items: stretch;
   }
 
   .cat-action__wrapper {
@@ -53,23 +54,29 @@
   }
 
   .cat-action__title {
-    font-size: 5em;
+    font-size: 4.8em;
+    padding: 44px 0 11px 0;
+    margin-left: -3px;
   }
 
   .cat-action__motto {
     font-size: 1.6em;
+    margin-left: -3px;
+    margin-top: 30px;
+    margin-bottom: 41px;
   }
 
   .cat-action__button {
     order: 0;
-    padding: 15px;
-    font-size: 1.6em;
+    padding: 15px 28px 15px 26px;
+    font-size: 1.59em;
     width: auto;
     margin: 0;
+    z-index: 1;
   }
 
   .cat-action__image {
-    margin: auto;
+    margin: -76px 0 0 -91px;
   }
 }
 

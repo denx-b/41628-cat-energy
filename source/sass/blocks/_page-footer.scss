@@ -25,16 +25,30 @@
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 40px 0;
+    width: calc(768px - 60px);
+    padding: 46px 30px;
+    margin: auto;
   }
 
   .page-footer__logo {
     border-bottom: none;
+    padding: 0;
+    text-align: left;
+    width: 164px;
+  }
+
+  .page-footer__image {
+    width: 128px;
+    height: 24px;
+    margin-top: 0;
   }
 
   .page-footer__logo__social {
     border-bottom: none;
+    padding: 0;
+    margin: 0;
   }
 
   .page-footer__copyright {
