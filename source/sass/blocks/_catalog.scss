@@ -98,12 +98,12 @@
 
 @media (min-width: $desktop-width) {
   .catalog__title {
-    width: calc(1300px - 80px);
+    width: calc(#{$desktop-width} - 80px);
     padding: 0 40px;
   }
 
   .catalog__list {
-    width: calc(1440px - 140px);
+    width: calc(#{$desktop-width} - 70px);
     padding: 0 70px;
   }
 

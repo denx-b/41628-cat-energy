@@ -189,7 +189,7 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    width: calc(1300px - 70px);
-    padding: 40px 70px;
+    width: calc(#{$desktop-width} - 80px);
+    padding: 40px 40px;
   }
 }

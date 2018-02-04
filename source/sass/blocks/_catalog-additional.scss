@@ -70,7 +70,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog-additional {
-    width: calc(1300px - 80px);
+    width: calc(#{$desktop-width} - 80px);
     padding: 0 40px;
     display: flex;
     flex-wrap: wrap;

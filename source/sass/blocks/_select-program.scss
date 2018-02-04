@@ -39,12 +39,12 @@
 
 @media (min-width: $desktop-width) {
   .select-program__title {
-    width: calc(1300px - 80px);
+    width: calc(#{$desktop-width} - 80px);
     padding: 0 40px;
   }
 
   .select-program__text {
-    width: calc(1300px - 80px);
+    width: calc(#{$desktop-width} - 80px);
     padding: 0 40px;
   }
 

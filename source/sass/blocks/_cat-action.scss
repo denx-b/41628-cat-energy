@@ -83,7 +83,7 @@
 @media (min-width: $desktop-width) {
   .cat-action {
     width: auto;
-    padding: 140px 0;
+    padding: 140px 0 93px;
     background: url("../img/index-background-desktop@1x.jpg") no-repeat right top;
   }
 
@@ -102,20 +102,23 @@
   .cat-action__title {
     width: 435px;
     font-size: 4.8em;
+    padding-top: 27px;
+    margin-left: 0;
   }
 
   .cat-action__motto {
     width: 435px;
     margin-top: 29px;
+    margin-left: 0;
   }
 
   .cat-action__button {
-    margin-top: 24px;
-    padding: 15px 26px;
+    margin-top: 10px;
+    padding: 15px 29px 15px 26px;
   }
 
   .cat-action__image {
     float: right;
-    margin-top: -290px;
+    margin-top: -304px;
   }
 }

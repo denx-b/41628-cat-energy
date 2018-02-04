@@ -122,16 +122,21 @@
   }
 
   .main-nav__list {
-    width: calc(100% - 220px);
+    width: calc(#{$desktop-width} - 80px);
     max-width: inherit;
-    padding: 0 110px;
+    padding: 0 40px;
   }
 
   .main-nav__link {
     font-size: 1.6em;
+    margin-top: 0;
 
     &--main {
       color: $text-white;
+    }
+
+    &--logo {
+      padding-top: 9px;
     }
   }
 
@@ -147,5 +152,10 @@
   .main-nav__logo-image {
     margin-right: 14px;
     height: 59px;
+  }
+
+  .main-nav__logo-name {
+    width: 118px;
+    height: 21px;
   }
 }
