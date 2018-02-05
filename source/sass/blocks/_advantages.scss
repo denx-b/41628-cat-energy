@@ -110,12 +110,21 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
-    width: calc(#{$desktop-width} - 80px);
-    padding: 40px;
+    width: $desktop-width;
     margin: auto;
   }
 
   .advantages__item {
-    width: 25%;
+    width: 245px;
+    margin: 0 40px;
+
+    &::before {
+      left: 115px;
+    }
+  }
+
+  .advantages__title {
+    margin-top: 28px;
+    padding: 0 40px;
   }
 }

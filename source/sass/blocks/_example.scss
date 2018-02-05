@@ -189,7 +189,47 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    width: calc(#{$desktop-width} - 80px);
-    padding: 40px 40px;
+    width: auto;
+    padding: 17px 0;
+  }
+
+  .example__wrapper {
+    background: $background-gray;
+    padding: 0 calc(100% - 1300px);
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .example__title {
+    width: 100%;
+  }
+
+  .example__header {
+    flex-basis: calc(100% - 608px);
+  }
+
+  .example__footer {
+    flex-basis: 608px;
+    margin-top: 0;
+  }
+
+  .example__description {
+    width: 432px;
+    margin: 0;
+  }
+
+  .example__info-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .example__price {
+    margin-left: 0;
+    text-align: left;
+
+    br {
+      display: none;
+    }
   }
 }
