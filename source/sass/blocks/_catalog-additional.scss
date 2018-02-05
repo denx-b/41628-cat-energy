@@ -1,5 +1,5 @@
 .catalog-additional {
-  width: calc(320px - 40px);
+  width: 320px;
   padding: 20px;
   margin: auto;
 }
@@ -43,7 +43,7 @@
 
 @media (min-width: $tablet-width) {
   .catalog-additional {
-    width: calc(768px - 60px);
+    width: 768px;
     padding: 30px;
   }
 

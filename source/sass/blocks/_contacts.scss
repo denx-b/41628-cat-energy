@@ -6,8 +6,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: calc(320px - 40px);
-  margin: 48px auto 27px;
+  width: 320px;
+  padding: 0 20px;
+  margin: 27px auto 27px;
 }
 
 .contacts__label {
@@ -24,14 +25,14 @@
 }
 
 .contacts__map {
-  height: 361px;
+  height: 362px;
   background: #fff2e3;
 }
 
 @media (min-width: $tablet-width) {
   .contacts__header {
-    width: calc(768px - 140px);
-    padding: 8px 70px 32px;
+    width: 768px;
+    padding: 22px 70px 32px;
   }
 
   .contacts__label {
@@ -42,8 +43,15 @@
   .contacts__address {
     @include font-height(1.3em, 1.25em);
     width: 190px;
+    height: 79px;
     margin-right: 0;
     text-align: right;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts__city {
+    margin-top: auto;
   }
 
   .contacts__map {

@@ -1,3 +1,17 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 12.5px;
+}
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -7,10 +21,4 @@
   margin: -1px;
   padding: 0;
   border: 0;
-}
-
-body {
-  min-width: 320px;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 12.5px;
 }

@@ -20,7 +20,7 @@
   @include font-height(2.89em, 1em);
   font-weight: 400;
   margin: 0;
-  padding: 27px 0 11px 0;
+  padding: 27px 0 10px 0;
 }
 
 .cat-action__motto {
@@ -99,6 +99,7 @@
 
   .cat-action__wrapper {
     display: block;
+    box-sizing: content-box;
     width: calc(100% - 518px);
     padding: 55px 328px 0 190px;
     margin: auto;

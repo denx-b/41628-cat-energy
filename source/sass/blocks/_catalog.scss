@@ -55,7 +55,7 @@
 @media (min-width: $tablet-width) {
   .catalog__title {
     font-size: 5em;
-    width: calc(768px - 60px);
+    width: 768px;
     padding: 30px;
     margin: auto;
     text-align: left;
@@ -108,7 +108,7 @@
   }
 
   .catalog__item {
-    width: calc(325px - 156px);
+    width: 325px;
     margin: 40px;
     padding: 40px 38px;
   }

@@ -27,7 +27,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: calc(768px - 60px);
+    width: 768px;
     padding: 46px 30px;
     margin: auto;
   }
@@ -43,6 +43,7 @@
     width: 128px;
     height: 24px;
     margin-top: 0;
+    margin-left: 1px;
   }
 
   .page-footer__logo__social {
