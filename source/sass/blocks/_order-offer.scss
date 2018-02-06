@@ -2,27 +2,33 @@
   background: $background-green url("../img/gift-photo-mobile@1x.jpg") no-repeat;
   background-size: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
 .order-offer__text {
-  font-size: 1.4em;
+  @include font-height(1.28em, 1.2em);
   color: $text-white;
   font-family: "Arial", "Helvetica", sans-serif;
+  width: 170px;
+}
+
+.order-offer__icon {
+  width: 55px;
+  height: 188px;
+  background: url("../img/icon-gift.svg") no-repeat center;
 }
 
 @media (min-width: $tablet-width) {
   .order-offer {
     background-position: left -354px;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
-  .order-offer__wrapper {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+  .order-offer__text {
+    text-align: left;
   }
 }
 
