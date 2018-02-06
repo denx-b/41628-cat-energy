@@ -172,13 +172,13 @@
     position: absolute;
 
     &--before {
-      background: url("../img/before-tablet@1x.png") no-repeat 46px 62px;
+      background: url("../img/before-tablet@1x.png") no-repeat 46px 44px;
       left: 0;
     }
 
     &--after {
       display: block;
-      background: url("../img/after-tablet@1x.png") no-repeat -247px 44px;
+      background: url("../img/after-tablet@1x.png") no-repeat -338px 44px;
       right: 0;
     }
   }
@@ -254,12 +254,12 @@
 
   .example__image {
     &--before {
-      background: url("../img/before-tablet@1x.png") no-repeat -40px 41px;
+      background: url("../img/before-tablet@1x.png") no-repeat -40px 23px;
       width: 325px;
     }
 
     &--after {
-      background: url("../img/after-tablet@1x.png") no-repeat -274px 23px;
+      background: url("../img/after-tablet@1x.png") no-repeat -365px 23px;
       width: 315px;
     }
   }
