@@ -86,3 +86,9 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .social {
+    padding-top: 10px;
+  }
+}

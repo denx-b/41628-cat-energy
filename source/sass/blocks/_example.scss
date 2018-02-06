@@ -192,12 +192,12 @@
 @media (min-width: $desktop-width) {
   .example {
     width: auto;
-    padding: 17px 0;
+    padding: 17px 0 0;
   }
 
   .example__wrapper {
     margin: auto;
-    padding: 0 80px;
+    padding: 0 calc((100% - 1280px) / 2);
     background: linear-gradient(to right, #f2f2f2 0%, #f2f2f2 75%, #eaeaea 25%, #eaeaea 100%);
     display: flex;
     flex-wrap: nowrap;

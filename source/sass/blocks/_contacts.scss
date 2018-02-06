@@ -58,3 +58,22 @@
     height: 396px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+  }
+
+  .contacts__header {
+    position: absolute;
+    background: $background-base;
+    top: 68px;
+    left: 110px;
+    padding: 63px 55px 58px 76px;
+    width: 570px;
+  }
+
+  .contacts__address {
+    text-align: left;
+  }
+}
