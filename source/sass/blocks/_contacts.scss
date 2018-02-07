@@ -6,7 +6,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 320px;
   padding: 27px 20px;
   margin: auto;
 
@@ -25,7 +24,7 @@
   @include font-height(1.1em, 1.4em);
   color: $text-gray;
   font-family: "Arial", "Helvetica", sans-serif;
-  margin: 0 auto 0 19px;
+  margin-right: 6px;
 }
 
 .contacts__map {
