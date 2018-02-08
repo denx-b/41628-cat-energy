@@ -22,13 +22,21 @@
 
 @media (min-width: $tablet-width) {
   .order-offer {
-    background-position: left -354px;
+    background: url("../img/gift-photo-tablet@1x.jpg");
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 91px;
+  }
+
+  .order-offer__icon {
+    background: url("../img/icon-gift.svg") no-repeat 0 59px;
+    width: 56px;
   }
 
   .order-offer__text {
     text-align: left;
+    width: 194px;
+    padding-right: 30px;
   }
 }
 
