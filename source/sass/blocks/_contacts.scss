@@ -34,7 +34,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts__header {
-    width: 768px;
+    width: auto;
     padding: 63px 70px 59px;
   }
 
@@ -70,7 +70,7 @@
   .contacts__header {
     position: absolute;
     background: $background-base;
-    top: 68px;
+    top: 95px;
     left: 110px;
     padding: 63px 55px 58px 76px;
     width: 570px;

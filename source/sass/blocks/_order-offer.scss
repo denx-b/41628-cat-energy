@@ -43,6 +43,20 @@
 
 @media (min-width: $desktop-width) {
   .order-offer {
-    background-size: 0;
+    flex-direction: column;
+    background: url("../img/gift-photo-desktop@1x.jpg") no-repeat;
+    padding: 0 91px;
+  }
+
+  .order-offer__icon {
+    background: url("../img/icon-gift.svg") no-repeat 0 65px;
+    width: 56px;
+  }
+
+  .order-offer__text {
+    width: 170px;
+    height: 102px;
+    text-align: center;
+    padding-right: 0;
   }
 }
