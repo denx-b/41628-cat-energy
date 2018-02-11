@@ -1,54 +1,44 @@
 .select-program__title {
-  font-size: 3em;
+  width: 320px;
+  margin: auto;
+  padding: 24px 20px 33px;
+  font-size: 2.88em;
   color: $text-black-1;
   font-weight: 400;
-  width: calc(320px - 40px);
-  padding: 20px;
-  margin: auto;
 }
 
 .select-program__text {
-  @include font-height(1.2em, 1.5em);
-  text-transform: uppercase;
-  width: calc(320px - 40px);
-  padding: 0 20px 0;
-  margin: auto;
-}
-
-.select-program__form {
+  @include font-height(1.12em, 1.4em);
   width: 320px;
-  margin: auto;
+  margin: 0 auto 0;
+  text-transform: uppercase;
+  padding: 0 40px 0 20px;
 }
 
 @media (min-width: $tablet-width) {
   .select-program__title {
-    font-size: 5em;
-    width: calc(768px - 60px);
-    padding: 30px;
+    font-size: 4.79em;
+    padding: 40px 30px 50px;
+    width: 768px;
   }
 
   .select-program__text {
-    width: calc(768px - 140px);
-    padding: 0 70px 20px;
-  }
-
-  .select-program__form {
+    @include font-height(1.6em, 1.58em);
     width: 768px;
+    margin: auto;
+    padding: 0 370px 0 70px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .select-program__title {
-    width: calc(1300px - 80px);
+    width: $desktop-width;
     padding: 0 40px;
+    margin: 57px auto 52px;
   }
 
   .select-program__text {
-    width: calc(1300px - 80px);
-    padding: 0 40px;
-  }
-
-  .select-program__form {
-    width: 1300px;
+    width: $desktop-width;
+    padding: 0 900px 0 40px;
   }
 }

@@ -3,11 +3,19 @@
 }
 
 .page-main__advantages {
-  margin-bottom: 31px;
+  margin-bottom: 23px;
 }
 
 @media (min-width: $desktop-width) {
   .page-main--main {
-    margin-top: -129px;
+    margin-top: -127px;
+  }
+
+  .page-main__categories {
+    margin-top: 40px;
+  }
+
+  .page-main__advantages {
+    margin-bottom: 0;
   }
 }

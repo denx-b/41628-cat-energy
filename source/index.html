@@ -11,23 +11,17 @@
   <header class="page-header">
     <nav class="page-header__main-nav main-nav">
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
+        <ul class="main-nav__list main-nav__list--main">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--logo main-nav__link--main">
+            <a class="main-nav__link main-nav__link--logo main-nav__link">
               <img class="main-nav__logo-image" src="img/icon-logo-mobile.svg" alt="">
-              <img class="main-nav__logo-name" src="//placehold.it/101x18" alt="">
+              <img class="main-nav__logo-name" src="img/logo-mobile-header.svg" width="102" height="18" alt="">
               <button class="main-nav__toggle" type="button">Открыть меню</button>
             </a>
           </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link main-nav__link--main">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--main" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--main" href="form.html">Подбор программы</a>
-          </li>
+          <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Подбор программы</a></li>
         </ul>
       </div>
     </nav>
@@ -40,30 +34,26 @@
         <p class="cat-action__motto">Занялся собой? Займись котом!</p>
         <a class="cat-action__button button button--text-small" href="form.html">Подобрать программу</a>
         <picture class="cat-action__image">
-          <source srcset="img/index-can-desktop@1x.png" media="(min-width: 1440px)">
+          <source srcset="img/index-can-desktop@1x.png" media="(min-width: 1300px)">
           <source srcset="img/index-can-tablet@1x.jpg" media="(min-width: 768px)">
           <img src="img/index-can-mobile@1x.png" alt="">
         </picture>
       </div>
     </section>
 
-    <section class="categories">
+    <section class="page-main__categories categories">
       <h2 class="visually-hidden">Каталог</h2>
       <ul class="categories__list">
         <li class="categories__item">
-          <div class="categories__title">
-            <img class="categories__image" src="//placehold.it/50x50" alt="">
-            <h3 class="categories__title-text">Похудение</h3>
-          </div>
+          <span class="categories__image categories__image--slim"></span>
+          <h3 class="categories__title-text">Похудение</h3>
           <p class="categories__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету!
             Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a class="categories__link" href="#">Каталог slim</a>
         </li>
         <li class="categories__item">
-          <div class="categories__title">
-            <img class="categories__image" src="//placehold.it/50x50" alt="">
-            <h3 class="categories__title-text">Набор массы</h3>
-          </div>
+          <span class="categories__image categories__image--pro"></span>
+          <h3 class="categories__title-text">Набор массы</h3>
           <p class="categories__description">Заработать авторитет среди дворовых котов и даже собак?
             Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <a class="categories__link" href="#">Каталог pro</a>
@@ -75,46 +65,55 @@
       <h2 class="advantages__title">Как это работает</h2>
       <ul class="advantages__list">
         <li class="advantages__item">
+          <span class="advantages__icon advantages__icon--leaf"></span>
           <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
         </li>
         <li class="advantages__item">
+          <span class="advantages__icon advantages__icon--powder"></span>
           <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
         </li>
         <li class="advantages__item">
+          <span class="advantages__icon advantages__icon--dining"></span>
           <p class="advantages__description">Замените один-два приема обычной еды на наше фунцкциональное питание.</p>
         </li>
         <li class="advantages__item">
+          <span class="advantages__icon advantages__icon--clock"></span>
           <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
         </li>
       </ul>
     </section>
 
     <section class="page-main__example example">
+      <h2 class="example__title">Живой пример</h2>
       <div class="example__wrapper">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
-          16 часов в день. </p>
-        <div class="example__info-wrapper">
-          <ul class="example__info-list">
-            <li class="example__info-item">
-              <span class="example__info-value">5 кг</span>
-              <span class="example__info-label">снижение веса</span>
-            </li>
-            <li class="example__info-item">
-              <span class="example__info-value">60 дней</span>
-              <span class="example__info-label">затрачено времени</span>
-            </li>
-          </ul>
-          <p class="example__price">Затраты на питание: 15 000 руб.</p>
-        </div>
-        <img class="example__image" src="img/before-mobile@1x.png" alt="">
-        <div class="example__result">
-          <span class="example__result-label">Было</span>
-          <div class="example__progress progress">
-            <span class="progress__bar"></span>
+        <div class="example__header">
+          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+            Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
+            16 часов в день. </p>
+          <div class="example__info-wrapper">
+            <ul class="example__info-list">
+              <li class="example__info-item">
+                <span class="example__info-value">5 кг</span>
+                <span class="example__info-label">снижение веса</span>
+              </li>
+              <li class="example__info-item">
+                <span class="example__info-value">60 дней</span>
+                <span class="example__info-label">затрачено времени</span>
+              </li>
+            </ul>
+            <p class="example__price">Затраты на питание:<br> <span class="example__price-value">15 000 руб.</span></p>
           </div>
-          <span class="example__result-label">Стало</span>
+        </div>
+        <div class="example__footer">
+          <div class="example__image example__image--before"></div>
+          <div class="example__image example__image--after"></div>
+          <div class="example__toggle toggle">
+            <span class="toggle__label">Было</span>
+            <div class="toggle__wrapper">
+              <span class="toggle__bar"></span>
+            </div>
+            <span class="toggle__label toggle__label--after">Стало</span>
+          </div>
         </div>
       </div>
     </section>
@@ -125,7 +124,10 @@
       <h2 class="visually-hidden">Контакты</h2>
       <header class="contacts__header">
         <span class="contacts__label">приглашаем<br> к сотрудничеству<br> дилеров!</span>
-        <span class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</span>
+        <span class="contacts__address">
+          ул. Большая<br> Конюшенная, д. 19/8<br>
+          <span class="contacts__city">Санкт-Петербург</span>
+        </span>
       </header>
       <div class="contacts__map"></div>
     </section>
@@ -133,7 +135,7 @@
     <div class="page-footer__wrapper">
       <section class="page-footer__logo">
         <a href="#">
-          <img class="page-footer__image" src="//placehold.it/128x24" alt="">
+          <img class="page-footer__image" src="img/logo-footer.svg" width="128" height="24" alt="">
         </a>
       </section>
       <section class="page-footer__social social">
@@ -152,11 +154,10 @@
       <section class="page-footer__copyright copyright">
         <a class="copyright__name" href="https://htmlacademy.ru/intensive/adaptive">
           <span>HTML Academy</span>
-          <img src="//placehold.it/27x34" alt="">
+          <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="36" alt="">
         </a>
       </section>
     </div>
   </footer>
-
   </body>
 </html>

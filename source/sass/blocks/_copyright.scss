@@ -4,18 +4,33 @@
 }
 
 .copyright__name {
-  font-size: 1.4em;
+  font-size: 1.26em;
   font-family: "Arial", "Helvetica", sans-serif;
   text-decoration: none;
   color: $text-gray;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 0;
+  padding: 19px 0 23px;
+}
+
+.copyright__image {
+  margin-left: auto;
+  margin-top: 2px;
 }
 
 @media (min-width: $tablet-width) {
+  .copyright {
+    width: 164px;
+  }
+
   .copyright__name {
-    justify-content: space-around;
+    font-size: 1.27em;
+    justify-content: space-between;
+    padding: 15px 0 0 0;
+  }
+
+  .copyright__image {
+    margin: 0 0 -2px 0;
   }
 }

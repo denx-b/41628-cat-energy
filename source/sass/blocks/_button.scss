@@ -9,6 +9,14 @@
   padding: 10px 0;
   display: inline-block;
 
+  &:hover {
+    background-color: $background-green-hover;
+  }
+
+  &:active {
+    color: $text-green-gray;
+  }
+
   &--text-small {
     font-size: 1.12em;
     padding: 12px 0;
@@ -17,5 +25,13 @@
   &--gray {
     color: $text-black-2;
     background-color: $background-gray;
+
+    &:hover {
+      background-color: $background-gray-hover;
+    }
+
+    &:active {
+      color: $text-gray-2;
+    }
   }
 }

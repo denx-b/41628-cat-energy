@@ -17,25 +17,25 @@
 }
 
 .cat-action__title {
-  @include font-height(2.9em, 1em);
+  @include font-height(2.89em, 1em);
   font-weight: 400;
   margin: 0;
-  padding: 27px 0 11px 0;
+  padding: 27px 0 10px 0;
 }
 
 .cat-action__motto {
-  font-size: 1.1em;
+  font-size: 1.12em;
   text-transform: uppercase;
   margin-bottom: 27px;
 }
 
 .cat-action__image {
-  margin-bottom: 3px;
+  margin-bottom: 1px;
 }
 
 .cat-action__button {
   order: 1;
-  width: 88%;
+  width: calc(320px - 40px);
   margin: 0 auto;
 }
 
@@ -45,6 +45,7 @@
     color: $text-black-1;
     width: 528px;
     margin: auto;
+    align-items: stretch;
   }
 
   .cat-action__wrapper {
@@ -53,38 +54,56 @@
   }
 
   .cat-action__title {
-    font-size: 5em;
+    font-size: 4.8em;
+    padding: 44px 0 11px 0;
+    margin-left: -3px;
   }
 
   .cat-action__motto {
     font-size: 1.6em;
+    margin-left: -3px;
+    margin-top: 30px;
+    margin-bottom: 41px;
   }
 
   .cat-action__button {
     order: 0;
-    padding: 15px;
-    font-size: 1.6em;
+    padding: 15px 28px 15px 26px;
+    font-size: 1.59em;
     width: auto;
     margin: 0;
+    z-index: 1;
   }
 
   .cat-action__image {
-    margin: auto;
+    margin: -76px 0 0 -91px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .cat-action {
     width: auto;
-    padding: 140px 0;
-    background: url("../img/index-background-desktop@1x.jpg") no-repeat right top;
+    padding: 140px 0 53px;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: calc(50% - 40px);
+      background: $background-green-2 url("../img/index-background-desktop@1x.jpg") no-repeat right 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
   }
 
   .cat-action__wrapper {
     display: block;
+    box-sizing: content-box;
     width: calc(100% - 518px);
     padding: 55px 328px 0 190px;
     margin: auto;
+    z-index: 1;
   }
 
   .cat-action__content {
@@ -95,20 +114,23 @@
   .cat-action__title {
     width: 435px;
     font-size: 4.8em;
+    padding-top: 27px;
+    margin-left: 0;
   }
 
   .cat-action__motto {
     width: 435px;
     margin-top: 29px;
+    margin-left: 0;
   }
 
   .cat-action__button {
-    margin-top: 24px;
-    padding: 15px 26px;
+    margin-top: 10px;
+    padding: 15px 29px 15px 26px;
   }
 
   .cat-action__image {
     float: right;
-    margin-top: -290px;
+    margin-top: -304px;
   }
 }

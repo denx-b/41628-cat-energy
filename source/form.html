@@ -13,15 +13,15 @@
     <div class="main-nav__wrapper">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--logo" href="index.html">
+          <a class="main-nav__link main-nav__link--logo main-nav__link" href="index.html">
             <img class="main-nav__logo-image" src="img/icon-logo-mobile.svg" alt="">
-            <img class="main-nav__logo-name" src="//placehold.it/101x18" alt="">
+            <img class="main-nav__logo-name" src="img/logo-mobile-header.svg" width="102" height="18" alt="">
             <button class="main-nav__toggle" type="button">Открыть меню</button>
           </a>
         </li>
-        <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="index.html">Главная</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
-        <li class="main-nav__item"><a class="main-nav__link">Подбор программы</a></li>
+        <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Подбор программы</a></li>
       </ul>
     </div>
   </nav>
@@ -31,77 +31,77 @@
   <section class="select-program">
     <h1 class="select-program__title">Подбор программы</h1>
     <p class="select-program__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
-    <form class="select-program__form form-program" action="https://echo.htmlacademy.ru" method="post">
-      <div class="form-program__name-task-group">
-        <div class="form-program__group form-program__group--half">
-          <label class="form-program__label-block">
-            <span class="form-program__label">Имя:*</span>
-            <input class="form-program__input" type="text" name="name" value="Барсик">
-          </label>
-          <label class="form-program__label-block">
-            <span class="form-program__label">Вес (кг):*</span>
-            <input class="form-program__input" type="text" name="weight">
-          </label>
-          <label class="form-program__label-block">
-            <span class="form-program__label">Возраст (лет):*</span>
-            <input class="form-program__input" type="text" name="age">
-          </label>
+
+    <form class="form-program" action="https://echo.htmlacademy.ru" method="get">
+      <div class="form-program__wrapper form-program__wrapper--line1">
+        <div class="form-program__fields form-program__fields--info">
+          <div class="form-program__element">
+            <label class="form-program__label" for="name">Имя:*</label>
+            <input class="form-program__input form-program__input--name" id="name" type="text" name="name" placeholder="Барсик">
+          </div>
+          <div class="form-program__element">
+            <label class="form-program__label" for="weight">Вес (кг):*</label>
+            <input class="form-program__input form-program__input--weight" id="weight" type="text" name="weight" placeholder="7">
+          </div>
+          <div class="form-program__element">
+            <label class="form-program__label" for="age">Возраст (лет):</label>
+            <input class="form-program__input form-program__input--age" id="age" type="text" name="age" placeholder="7">
+          </div>
         </div>
-        <div class="form-program__group form-program__group--half">
-          <label class="form-program__label-block">
-            <input class="form-program__radio" name="task" type="radio">
-            <span class="form-program__label">Похудение</span>
-          </label>
-          <label class="form-program__label-block">
-            <input class="form-program__radio" name="task" type="radio">
-            <span class="form-program__label">Набор массы</span>
-          </label>
-          <label class="form-program__label-block">
-            <input class="form-program__radio" name="task" type="radio">
-            <span class="form-program__label">Не знаю (нужен ваш совет)</span>
-          </label>
+        <div class="form-program__fields form-program__fields--task">
+          <div class="form-program__box">
+            <input class="form-program__toggle" id="task_1" type="radio" name="task" value="1" checked>
+            <label class="form-program__btn" for="task_1"><span class="form-program__name">Похудение</span></label>
+            <input class="form-program__toggle" id="task_2" type="radio" name="task" value="1">
+            <label class="form-program__btn" for="task_2"><span class="form-program__name">Набор массы</span></label>
+            <input class="form-program__toggle" id="task_3" type="radio" name="task" value="1">
+            <label class="form-program__btn" for="task_3"><span class="form-program__name">Не знаю (нужен ваш совет)</span></label>
+          </div>
         </div>
       </div>
-      <div class="form-program__group form-program__group--master">
-        <h3 class="form-program__title form-program__title--max">Контактные данные (владельца кота)</h3>
-        <label class="form-program__label-block form-program__label-block--half">
-          <span class="form-program__label">E-mail:*</span>
-          <input class="form-program__input form-program__input--email" type="email" name="email">
-        </label>
-        <label class="form-program__label-block form-program__label-block--half">
-          <span class="form-program__label">Телефон:*</span>
-          <input class="form-program__input form-program__input--phone" type="tel" name="phone">
-        </label>
+      <div class="form-program__fields form-program__fields--contacts">
+        <h3 class="form-program__title form-program__title--1">Контактные данные (владельца кота)</h3>
+        <div class="form-program__wrapper form-program__wrapper--line2">
+          <div class="form-program__element form-program__element--full">
+            <label class="form-program__label" for="email">E-mail:*<i class="form-program__mail-icon"></i></label>
+            <input class="form-program__input form-program__input--email" id="email" type="email" name="email" placeholder="kuklachev@gmail.com">
+          </div>
+          <div class="form-program__element form-program__element--full">
+            <label class="form-program__label" for="phone">Телефон:*<i class="form-program__tel-icon"></i></label>
+            <input class="form-program__input" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+          </div>
+        </div>
       </div>
-      <div class="form-program__group">
-        <h3 class="form-program__title">Комментарий</h3>
-        <label>
-          <textarea class="form-program__textarea" name="comment"
-                    placeholder="Расскажите обо всех повадках кота"></textarea>
-        </label>
+      <div class="form-program__fields form-program__fields--comment">
+        <h3 class="form-program__title form-program__title--2">Комментарий</h3>
+        <div class="form-program__comment-wrapper">
+          <textarea class="form-program__input form-program__input--comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
       </div>
-      <div class="form-program__additional">
-        <h3 class="form-program__title form-program__title--max">Дополнительно</h3>
-        <label class="form-program__label-block form-program__label-block--half">
-          <input class="form-program__checkbox" name="additional[]" value="1" type="checkbox">
-          <span class="form-program__label">Сахарозаменитель</span>
-        </label>
-        <label class="form-program__label-block form-program__label-block--half">
-          <input class="form-program__checkbox" name="additional[]" value="2" type="checkbox">
-          <span class="form-program__label">Питьевая вода</span>
-        </label>
-        <label class="form-program__label-block form-program__label-block--half">
-          <input class="form-program__checkbox" name="additional[]" value="3" type="checkbox">
-          <span class="form-program__label">Молоко</span>
-        </label>
-        <label class="form-program__label-block form-program__label-block--half">
-          <input class="form-program__checkbox" name="additional[]" value="4" type="checkbox">
-          <span class="form-program__label">Витамины</span>
-        </label>
+      <div class="form-program__fields form-program__fields--additional">
+        <h3 class="form-program__title form-program__title--3">Дополнительно</h3>
+        <div class="form-program__wrapper form-program__wrapper--line3">
+          <div class="form-program__line">
+            <input class="form-program__toggle" id="shugare" type="checkbox" name="additional[]" value="1" checked>
+            <label class="form-program__checkbox" for="shugare"><span class="form-program__heading">Сахарозаменитель</span></label>
+          </div>
+          <div class="form-program__line">
+            <input class="form-program__toggle" id="water" type="checkbox" name="additional[]" value="2">
+            <label class="form-program__checkbox" for="water"><span class="form-program__heading">Питьевая вода</span></label>
+          </div>
+          <div class="form-program__line">
+            <input class="form-program__toggle" id="milk" type="checkbox" name="additional[]" value="3">
+            <label class="form-program__checkbox" for="milk"><span class="form-program__heading">Молоко</span></label>
+          </div>
+          <div class="form-program__line">
+            <input class="form-program__toggle" id="vitamin" type="checkbox" name="additional[]" value="4">
+            <label class="form-program__checkbox" for="vitamin"><span class="form-program__heading">Витамины</span></label>
+          </div>
+        </div>
       </div>
       <div class="form-program__wrapper-button">
-        <input class="form-program__button button" type="submit" value="Отправить заявку">
-        <span class="form-program__required-label">* — Обязательные поля</span>
+        <input type="submit" value="Отправить заявку" class="form-program__button button">
+        <p class="form-program__warning">* &#8212; Обязательные поля</p>
       </div>
     </form>
   </section>
@@ -110,9 +110,12 @@
 <footer class="page-footer">
   <section class="contacts">
     <h2 class="visually-hidden">Контакты</h2>
-    <header class="contacts__header">
+    <header class="contacts__header contacts__header--gray">
       <span class="contacts__label">приглашаем<br> к сотрудничеству<br> дилеров!</span>
-      <span class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</span>
+      <span class="contacts__address">
+          ул. Большая<br> Конюшенная, д. 19/8<br>
+          <span class="contacts__city">Санкт-Петербург</span>
+        </span>
     </header>
     <div class="contacts__map"></div>
   </section>
@@ -120,7 +123,7 @@
   <div class="page-footer__wrapper">
     <section class="page-footer__logo">
       <a href="index.html">
-        <img class="page-footer__image" src="//placehold.it/128x24" alt="">
+        <img class="page-footer__image" src="img/logo-footer.svg" width="128" height="24" alt="">
       </a>
     </section>
     <section class="page-footer__social social">
@@ -139,7 +142,7 @@
     <section class="page-footer__copyright copyright">
       <a class="copyright__name" href="https://htmlacademy.ru/intensive/adaptive">
         <span>HTML Academy</span>
-        <img src="//placehold.it/27x34" alt="">
+        <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="36" alt="">
       </a>
     </section>
   </div>
