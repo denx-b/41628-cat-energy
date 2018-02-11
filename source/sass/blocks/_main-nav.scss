@@ -12,6 +12,7 @@
 .main-nav__item {
   text-align: center;
   border-bottom: 1px solid $line-gray-2;
+  position: relative;
 }
 
 .main-nav__link {
@@ -81,6 +82,17 @@
   .main-nav__item {
     border-bottom: none;
     flex-grow: 0;
+
+    &--active::after {
+      display: block;
+      content: "";
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      background: $background-green;
+      height: 2px;
+      width: 100%;
+    }
   }
 
   .main-nav__item:nth-child(1) {
@@ -96,6 +108,10 @@
     font-weight: normal;
     font-size: 1.44em;
     margin-top: 1px;
+
+    &--main {
+      color: $text-white;
+    }
 
     &--logo {
       display: flex;
@@ -132,19 +148,25 @@
     width: calc(100% - 140px);
     max-width: inherit;
     padding: 0 40px;
+
+    &--main {
+      .main-nav__item--active::after {
+        background-color: $background-base;
+      }
+    }
   }
 
   .main-nav__link {
     font-size: 1.6em;
     margin-top: 0;
 
-    &--main {
-      color: $text-white;
-    }
-
     &--logo {
       padding-top: 9px;
     }
+  }
+
+  .main-nav__list--main .main-nav__link {
+    color: $text-white;
   }
 
   .main-nav__item {
