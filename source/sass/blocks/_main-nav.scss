@@ -31,6 +31,14 @@
     justify-content: space-around;
     padding: 11px 0 16px;
   }
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__logo-image {
