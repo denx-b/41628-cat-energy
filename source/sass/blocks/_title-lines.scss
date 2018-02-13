@@ -1,0 +1,88 @@
+.title-lines {
+  position: relative;
+  z-index: 10;
+
+  span {
+    background-color: #ffffff;
+    padding-right: 23px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: calc(100vw - 90%);
+    min-width: 300px;
+    top: calc(50% + 1px);
+    right: calc(((100vw - 280px) / 2) - (100vw - 280px));
+    height: 3px;
+    background-color: #68b738;
+    z-index: -1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .title-lines {
+    span {
+      padding-right: 38px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: calc((100vw - 708px) / 2);
+      top: calc(50% + 4px);
+      left: calc(((100vw - 708px) / 2) - (100vw - 708px));
+      height: 3px;
+      background-color: #68b738;
+      z-index: -1;
+    }
+
+    &::after {
+      width: 84%;
+      top: calc(50% + 4px);
+      right: calc(((100vw - 708px) / 2) - (100vw - 708px));
+    }
+
+    &--form::before {
+      width: calc((100vw - 418px) / 2);
+      left: calc(((100vw - 338px) / 2) - (100vw - 338px));
+    }
+
+    &--form::after {
+      width: calc(100vw - ((100vw - 648px) / 2));
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title-lines {
+    span {
+      padding-right: 38px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: calc((100vw - 1300px) / 2);
+      top: calc(50% - 13px);
+      left: calc(((100vw - 1220px) / 2) - (100vw - 1220px));
+      height: 3px;
+      background-color: #68b738;
+      z-index: -1;
+    }
+
+    &::after {
+      width: 100%;
+      top: calc(50% - 13px);
+      right: calc(((100vw - 1220px) / 2) - (100vw - 1220px));
+    }
+
+    &--form::before {
+      top: calc(50% + 5px);
+    }
+
+    &--form::after {
+      top: calc(50% + 5px);
+    }
+  }
+}
