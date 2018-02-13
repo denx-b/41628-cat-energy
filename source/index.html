@@ -18,12 +18,18 @@
       <ul class="main-nav__list main-nav__list--main">
         <li class="main-nav__item">
           <a class="main-nav__link main-nav__link--logo main-nav__link">
-            <picture class="main-nav__logo-image">
-              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img src="img/icon-logo-mobile.svg" width="33" height="38" alt="Cat energy link">
-            </picture>
-            <img class="main-nav__logo-name" src="img/logo-mobile-header.svg" width="102" height="18" alt="">
+            <svg class="main-nav__logo-image" title="Логотип Cat Energy" width="33" height="38">
+              <use xlink:href="#icon-logo-mobile"></use>
+            </svg>
+            <svg class="main-nav__logo-name main-nav__logo-name--mobile" title="Надпись Cat Energy" width="101" height="18">
+              <use xlink:href="#logo-mobile-header"></use>
+            </svg>
+            <svg class="main-nav__logo-name main-nav__logo-name--tablet" title="Надпись Cat Energy" width="172" height="57">
+              <use xlink:href="#logo-tablet"></use>
+            </svg>
+            <svg class="main-nav__logo-name main-nav__logo-name--desktop" title="Надпись Cat Energy" width="202" height="60">
+              <use xlink:href="#logo-desktop"></use>
+            </svg>
             <button class="main-nav__toggle" type="button">Открыть меню</button>
           </a>
         </li>

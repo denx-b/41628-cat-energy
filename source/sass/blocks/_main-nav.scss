@@ -56,6 +56,11 @@
 .main-nav__logo-name {
   margin-left: -12px;
   margin-top: 5px;
+
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
 }
 
 .main-nav__toggle {
@@ -125,14 +130,17 @@
   }
 
   .main-nav__logo-image {
-    margin-left: 0;
-    margin-right: 18px;
-    width: 173px;
-    height: 58px;
+    display: none;
   }
 
   .main-nav__logo-name {
-    display: none;
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
   }
 
   .main-nav__toggle {
@@ -180,14 +188,16 @@
     margin-left: 34px;
   }
 
-  .main-nav__logo-image {
-    margin-right: 14px;
+  .main-nav__logo-name {
     width: 202px;
     height: 59px;
-  }
 
-  .main-nav__logo-name {
-    width: 118px;
-    height: 21px;
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
   }
 }
