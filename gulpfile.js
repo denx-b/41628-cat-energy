@@ -72,7 +72,17 @@ gulp.task("copy", function(){
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("build", ["clean", "copy", "style", "webp", "sprite", "html"]);
+gulp.task("build", function(done) {
+  run(
+    "clean",
+    "copy",
+    "style",
+    "webp",
+    "sprite",
+    "html",
+    done
+  );
+});
 
 gulp.task("serve-inside", function() {
   server.init({
