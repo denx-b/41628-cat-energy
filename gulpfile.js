@@ -66,6 +66,7 @@ gulp.task("clean", function() {
 gulp.task("copy", function(){
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
+    "source/js/**/*.js",
   ], {
     base: "source"
   })
@@ -106,4 +107,29 @@ gulp.task("serve", function() {
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("source/*.html", ["html"]).on("change", server.reload);
+});
+
+/**
+ * Update only svg/styles/html
+ */
+gulp.task("clean-svg", function() {
+  return del("build/img/*.svg");
+});
+
+gulp.task("images-svg", ["clean-svg"], function() {
+  return gulp.src("source/img/**/*.svg")
+    .pipe(imagemin([
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("build/img"));
+});
+
+gulp.task("build-svg", function(done) {
+  run(
+    "images-svg",
+    "sprite",
+    "style",
+    "html",
+    done
+  );
 });
