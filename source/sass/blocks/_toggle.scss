@@ -9,6 +9,7 @@
   font-size: 1.28em;
   text-transform: uppercase;
   color: $text-black-1;
+  cursor: pointer;
 
   &--after {
     margin-right: -4px;
@@ -72,13 +73,31 @@
       left: calc(50% - 4px);
       top: calc(50% - 4px);
     }
+
+    &:hover {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3), 0 0 0 2px $background-green;
+    }
   }
 
   .toggle__label {
     font-size: 1.56em;
+    border-bottom: 1px dotted $line-gray-7;
+    padding: 5px 0 4px;
 
     &--after {
       margin-right: 0;
+    }
+
+    &:hover {
+      border-bottom-style: solid;
+    }
+
+    &:active {
+      border-color: rgba(0, 0, 0, 0);
     }
   }
 }
