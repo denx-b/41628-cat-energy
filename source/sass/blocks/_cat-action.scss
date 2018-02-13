@@ -95,6 +95,13 @@
       right: 0;
       top: 0;
     }
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      &::after {
+        background: url("../img/index-background-desktop@2x.jpg") $background-green-2 no-repeat right 0;
+        background-size: 680px auto;
+      }
+    }
   }
 
   .cat-action__wrapper {

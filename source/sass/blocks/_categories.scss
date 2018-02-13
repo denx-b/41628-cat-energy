@@ -90,6 +90,18 @@
     right: -36px;
     top: 3px;
   }
+
+  &:hover {
+    &::after {
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      width: 33px;
+      right: -56px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

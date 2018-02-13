@@ -13,10 +13,20 @@
 
   &--before {
     background: url("../img/before-mobile@1x.png") no-repeat left top;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/before-mobile@2x.png");
+      background-size: 320px;
+    }
   }
 
   &--after {
     background: url("../img/after-mobile@1x.png") no-repeat left top;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/after-mobile@2x.png");
+      background-size: 320px;
+    }
     display: none;
   }
 }
@@ -174,18 +184,28 @@
     &--before {
       background: url("../img/before-tablet@1x.png") no-repeat 46px 44px;
       left: 0;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/before-tablet@2x.png");
+        background-size: 690px;
+      }
     }
 
     &--after {
       display: block;
       background: url("../img/after-tablet@1x.png") no-repeat -338px 44px;
       right: 0;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/after-tablet@2x.png");
+        background-size: 690px;
+      }
     }
   }
 
   .example__toggle {
     position: absolute;
-    bottom: 73px;
+    bottom: 68px;
   }
 }
 
@@ -254,13 +274,23 @@
 
   .example__image {
     &--before {
-      background: url("../img/before-tablet@1x.png") no-repeat -40px 23px;
+      background: url("../img/before-desktop@1x.png") no-repeat -40px 23px;
       width: 325px;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/before-desktop@2x.png");
+        background-size: 690px;
+      }
     }
 
     &--after {
-      background: url("../img/after-tablet@1x.png") no-repeat -365px 23px;
+      background: url("../img/after-desktop@1x.png") no-repeat -365px 23px;
       width: 315px;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/after-desktop@2x.png");
+        background-size: 690px;
+      }
     }
   }
 
