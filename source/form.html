@@ -15,15 +15,21 @@
 <header class="page-header">
   <nav class="page-header__main-nav main-nav">
     <div class="main-nav__wrapper">
-      <ul class="main-nav__list">
+      <ul class="main-nav__list main-nav__listftfc">
         <li class="main-nav__item">
           <a class="main-nav__link main-nav__link--logo main-nav__link" href="index.html">
-            <picture class="main-nav__logo-image">
-              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img src="img/icon-logo-mobile.svg" width="33" height="38" alt="Cat energy link">
-            </picture>
-            <img class="main-nav__logo-name" src="img/logo-mobile-header.svg" width="102" height="18" alt="">
+            <svg class="main-nav__logo-image" title="Логотип Cat Energy" width="33" height="38">
+              <use xlink:href="#icon-logo-mobile"></use>
+            </svg>
+            <svg class="main-nav__logo-name main-nav__logo-name--mobile" title="Надпись Cat Energy" width="101" height="18">
+              <use xlink:href="#logo-mobile-header"></use>
+            </svg>
+            <svg class="main-nav__logo-name main-nav__logo-name--tablet" title="Надпись Cat Energy" width="172" height="57">
+              <use xlink:href="#logo-tablet"></use>
+            </svg>
+            <svg class="main-nav__logo-name main-nav__logo-name--desktop" title="Надпись Cat Energy" width="202" height="60">
+              <use xlink:href="#logo-desktop"></use>
+            </svg>
             <button class="main-nav__toggle" type="button">Открыть меню</button>
           </a>
         </li>
@@ -103,18 +109,30 @@
           <div class="form-program__line">
             <input class="form-program__toggle" id="shugare" type="checkbox" name="additional[]" value="1" checked>
             <label class="form-program__checkbox" for="shugare"><span class="form-program__heading">Сахарозаменитель</span></label>
+            <svg class="form__icon-checkbox" width="21" height="16">
+              <use xlink:href="#icon-tick"></use>
+            </svg>
           </div>
           <div class="form-program__line">
             <input class="form-program__toggle" id="water" type="checkbox" name="additional[]" value="2">
             <label class="form-program__checkbox" for="water"><span class="form-program__heading">Питьевая вода</span></label>
+            <svg class="form__icon-checkbox" width="21" height="16">
+              <use xlink:href="#icon-tick"></use>
+            </svg>
           </div>
           <div class="form-program__line">
             <input class="form-program__toggle" id="milk" type="checkbox" name="additional[]" value="3">
             <label class="form-program__checkbox" for="milk"><span class="form-program__heading">Молоко</span></label>
+            <svg class="form__icon-checkbox" width="21" height="16">
+              <use xlink:href="#icon-tick"></use>
+            </svg>
           </div>
           <div class="form-program__line">
             <input class="form-program__toggle" id="vitamin" type="checkbox" name="additional[]" value="4">
             <label class="form-program__checkbox" for="vitamin"><span class="form-program__heading">Витамины</span></label>
+            <svg class="form__icon-checkbox" width="21" height="16">
+              <use xlink:href="#icon-tick"></use>
+            </svg>
           </div>
         </div>
       </div>
@@ -141,27 +159,50 @@
 
   <div class="page-footer__wrapper">
     <section class="page-footer__logo">
-      <a href="index.html">
+      <a class="page-footer__link" href="index.html">
         <img class="page-footer__image" src="img/logo-footer.svg" width="128" height="24" alt="">
       </a>
     </section>
     <section class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte">Мы в Вконтакте</a>
+          <a class="social__link social__link" href="https://vk.com/htmlacademy">
+            <svg class="social__icon social__icon--vkontakte social__icon--mobile" title="Мы в Вконтакте" width="22" height="12">
+              <use xlink:href="#icon-vk-mobile"></use>
+            </svg>
+            <svg class="social__icon social__icon--vkontakte" title="Мы в Вконтакте" width="30" height="16">
+              <use xlink:href="#icon-vk"></use>
+            </svg>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--instagram">Мы в Инстаграм</a>
+          <a class="social__link social__link" href="https://www.instagram.com/htmlacademy">
+            <svg class="social__icon social__icon--instagram social__icon--mobile" title="Мы в Инстаграм" width="16" height="16">
+              <use xlink:href="#icon-insta-mobile"></use>
+            </svg>
+            <svg class="social__icon social__icon--instagram" title="Мы в Инстаграм" width="23" height="23">
+              <use xlink:href="#icon-insta"></use>
+            </svg>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook">Мы на Фейсбук</a>
+          <a class="social__link social__link" href="https://www.facebook.com/htmlacademy">
+            <svg class="social__icon social__icon--facebook social__icon--mobile" title="Мы на Фейсбук" width="10" height="19">
+              <use xlink:href="#icon-fb-mobile"></use>
+            </svg>
+            <svg class="social__icon social__icon--facebook" title="Мы на Фейсбук" width="14" height="28">
+              <use xlink:href="#icon-fb"></use>
+            </svg>
+          </a>
         </li>
       </ul>
     </section>
     <section class="page-footer__copyright copyright">
       <a class="copyright__name" href="https://htmlacademy.ru/intensive/adaptive">
         <span>HTML Academy</span>
-        <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="36" alt="">
+        <svg class="copyright__image" title="Логотип htmlacademy" width="27" height="36">
+          <use xlink:href="#logo-htmlacademy"></use>
+        </svg>
       </a>
     </section>
   </div>

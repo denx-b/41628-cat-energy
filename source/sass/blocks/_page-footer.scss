@@ -10,6 +10,16 @@
   margin: 0 auto;
 }
 
+.page-footer__link {
+  &[href]:hover {
+    opacity: 0.8;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+  }
+}
+
 .page-footer__image {
   margin-top: 5px;
 }
@@ -68,7 +78,7 @@
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
     width: 1300px;
-    padding: 48px 40px;
+    padding: 44px 40px;
   }
 
   .page-footer__logo {
@@ -84,14 +94,14 @@
     width: auto;
   }
 
+  .page-footer__image {
+    margin-left: 0;
+  }
+
   .page-footer__copyright {
     margin: 0;
     padding: 0;
     width: auto;
     flex-basis: 164px;
-  }
-
-  .copyright__name {
-    padding: 0;
   }
 }

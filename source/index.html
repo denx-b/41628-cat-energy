@@ -148,27 +148,50 @@
 
   <div class="page-footer__wrapper">
     <section class="page-footer__logo">
-      <a href="#">
+      <a class="page-footer__link">
         <img class="page-footer__image" src="img/logo-footer.svg" width="128" height="24" alt="">
       </a>
     </section>
     <section class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte">Мы в Вконтакте</a>
+          <a class="social__link social__link" href="https://vk.com/htmlacademy">
+            <svg class="social__icon social__icon--vkontakte social__icon--mobile" title="Мы в Вконтакте" width="22" height="12">
+              <use xlink:href="#icon-vk-mobile"></use>
+            </svg>
+            <svg class="social__icon social__icon--vkontakte" title="Мы в Вконтакте" width="30" height="16">
+              <use xlink:href="#icon-vk"></use>
+            </svg>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--instagram">Мы в Инстаграм</a>
+          <a class="social__link social__link" href="https://www.instagram.com/htmlacademy">
+            <svg class="social__icon social__icon--instagram social__icon--mobile" title="Мы в Инстаграм" width="16" height="16">
+              <use xlink:href="#icon-insta-mobile"></use>
+            </svg>
+            <svg class="social__icon social__icon--instagram" title="Мы в Инстаграм" width="23" height="23">
+              <use xlink:href="#icon-insta"></use>
+            </svg>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook">Мы на Фейсбук</a>
+          <a class="social__link social__link" href="https://www.facebook.com/htmlacademy">
+            <svg class="social__icon social__icon--facebook social__icon--mobile" title="Мы на Фейсбук" width="10" height="19">
+              <use xlink:href="#icon-fb-mobile"></use>
+            </svg>
+            <svg class="social__icon social__icon--facebook" title="Мы на Фейсбук" width="14" height="28">
+              <use xlink:href="#icon-fb"></use>
+            </svg>
+          </a>
         </li>
       </ul>
     </section>
     <section class="page-footer__copyright copyright">
       <a class="copyright__name" href="https://htmlacademy.ru/intensive/adaptive">
         <span>HTML Academy</span>
-        <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="36" alt="">
+        <svg class="copyright__image" title="Логотип htmlacademy" width="27" height="36">
+          <use xlink:href="#logo-htmlacademy"></use>
+        </svg>
       </a>
     </section>
   </div>
