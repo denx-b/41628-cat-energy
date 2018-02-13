@@ -101,7 +101,7 @@
 @media (min-width: $tablet-width) {
   .example {
     width: 768px;
-    padding: 14px 0;
+    padding: 14px 0 0;
     background-color: $background-base;
   }
 
@@ -227,7 +227,7 @@
   .example__title {
     width: 1300px;
     padding: 0 40px;
-    margin-bottom: 72px;
+    margin-bottom: 71px;
   }
 
   .example__header {

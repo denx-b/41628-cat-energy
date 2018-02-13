@@ -5,21 +5,32 @@
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="js/picturefill.js" async></script>
 </head>
 <body>
+
+<div style="display:none">
+  <include src="build/img/sprite.svg"></include>
+</div>
 
 <header class="page-header">
   <nav class="page-header__main-nav main-nav">
     <div class="main-nav__wrapper">
-      <ul class="main-nav__list">
+      <ul class="main-nav__list main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--logo main-nav__link--main" href="index.html">
-            <picture class="main-nav__logo-image">
-              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img src="img/icon-logo-mobile.svg" width="33" height="38" alt="Cat energy link">
-            </picture>
-            <img class="main-nav__logo-name" src="img/logo-mobile-header.svg" width="102" height="18" alt="">
+          <a class="main-nav__link main-nav__link--logo main-nav__link" href="index.html">
+            <svg class="main-nav__logo-image" title="Логотип Cat Energy" width="33" height="38">
+              <use xlink:href="#icon-logo-mobile"></use>
+            </svg>
+            <svg class="main-nav__logo-name main-nav__logo-name--mobile" title="Надпись Cat Energy" width="101" height="18">
+              <use xlink:href="#logo-mobile-header"></use>
+            </svg>
+            <svg class="main-nav__logo-name main-nav__logo-name--tablet" title="Надпись Cat Energy" width="172" height="57">
+              <use xlink:href="#logo-tablet"></use>
+            </svg>
+            <svg class="main-nav__logo-name main-nav__logo-name--desktop" title="Надпись Cat Energy" width="202" height="60">
+              <use xlink:href="#logo-desktop"></use>
+            </svg>
             <button class="main-nav__toggle" type="button">Открыть меню</button>
           </a>
         </li>
@@ -67,7 +78,7 @@
           <picture>
             <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
-            <img class="works-item__image" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" alt="Пример нашей работы">
+            <img src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" alt="Пример нашей работы">
           </picture>
         </a>
         <div class="catalog__info-wrapper">
@@ -94,7 +105,7 @@
           <picture>
             <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
-            <img class="works-item__image" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" alt="Пример нашей работы">
+            <img src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" alt="Пример нашей работы">
           </picture>
         </a>
         <div class="catalog__info-wrapper">
@@ -121,7 +132,7 @@
           <picture>
             <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
-            <img class="works-item__image" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" alt="Пример нашей работы">
+            <img src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" alt="Пример нашей работы">
           </picture>
         </a>
         <div class="catalog__info-wrapper">
@@ -148,7 +159,7 @@
           <picture>
             <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
-            <img class="works-item__image" src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="Пример нашей работы">
+            <img src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="Пример нашей работы">
           </picture>
         </a>
         <div class="catalog__info-wrapper">
@@ -175,7 +186,7 @@
           <picture>
             <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
-            <img class="works-item__image" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Пример нашей работы">
+            <img src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Пример нашей работы">
           </picture>
         </a>
         <div class="catalog__info-wrapper">
@@ -202,7 +213,7 @@
           <picture>
             <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
-            <img class="works-item__image" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" alt="Пример нашей работы">
+            <img src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" alt="Пример нашей работы">
           </picture>
         </a>
         <div class="catalog__info-wrapper">
@@ -225,7 +236,14 @@
         <a class="catalog__order-link button" href="#">Заказать</a>
       </li>
       <li class="catalog__item catalog__item--more">
-        <a class="catalog__link catalog__link--more" href="#"></a>
+        <a class="catalog__link catalog__link--more" href="#">
+          <svg class="catalog__icon-more catalog__icon-more--mobile" title="Показать все" width="30" height="30">
+            <use xlink:href="#icon-plus-mobile"></use>
+          </svg>
+          <svg class="catalog__icon-more catalog__icon-more--tablet" title="Показать все" width="60" height="60">
+            <use xlink:href="#icon-plus"></use>
+          </svg>
+        </a>
         <h3 class="catalog__item-title catalog__item-title--more"><a href="#" class="catalog__item-link">Показать еще 100500 товаров</a></h3>
         <span class="catalog__text-more">На самом деле вкусов гораздо больше!</span>
         <a class="catalog__button-more button button--gray" href="#">Показать все</a>
@@ -309,30 +327,56 @@
 
   <div class="page-footer__wrapper">
     <section class="page-footer__logo">
-      <a href="index.html">
+      <a class="page-footer__link" href="index.html">
         <img class="page-footer__image" src="img/logo-footer.svg" width="128" height="24" alt="">
       </a>
     </section>
     <section class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte">Мы в Вконтакте</a>
+          <a class="social__link social__link" href="https://vk.com/htmlacademy">
+            <svg class="social__icon social__icon--vkontakte social__icon--mobile" title="Мы в Вконтакте" width="22" height="12">
+              <use xlink:href="#icon-vk-mobile"></use>
+            </svg>
+            <svg class="social__icon social__icon--vkontakte" title="Мы в Вконтакте" width="30" height="16">
+              <use xlink:href="#icon-vk"></use>
+            </svg>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--instagram">Мы в Инстаграм</a>
+          <a class="social__link social__link" href="https://www.instagram.com/htmlacademy">
+            <svg class="social__icon social__icon--instagram social__icon--mobile" title="Мы в Инстаграм" width="16" height="16">
+              <use xlink:href="#icon-insta-mobile"></use>
+            </svg>
+            <svg class="social__icon social__icon--instagram" title="Мы в Инстаграм" width="23" height="23">
+              <use xlink:href="#icon-insta"></use>
+            </svg>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook">Мы на Фейсбук</a>
+          <a class="social__link social__link" href="https://www.facebook.com/htmlacademy">
+            <svg class="social__icon social__icon--facebook social__icon--mobile" title="Мы на Фейсбук" width="10" height="19">
+              <use xlink:href="#icon-fb-mobile"></use>
+            </svg>
+            <svg class="social__icon social__icon--facebook" title="Мы на Фейсбук" width="14" height="28">
+              <use xlink:href="#icon-fb"></use>
+            </svg>
+          </a>
         </li>
       </ul>
     </section>
     <section class="page-footer__copyright copyright">
       <a class="copyright__name" href="https://htmlacademy.ru/intensive/adaptive">
         <span>HTML Academy</span>
-        <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="36" alt="">
+        <svg class="copyright__image" title="Логотип htmlacademy" width="27" height="36">
+          <use xlink:href="#logo-htmlacademy"></use>
+        </svg>
       </a>
     </section>
   </div>
 </footer>
+
+<script src="js/scripts.js" async></script>
+
 </body>
 </html>

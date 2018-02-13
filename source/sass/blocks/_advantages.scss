@@ -142,12 +142,15 @@
     margin: 0 40px;
 
     &::before {
-      left: 115px;
+      left: 111px;
+      top: -31px;
+      font-size: 22.5em;
     }
   }
 
   .advantages__title {
-    margin-top: 28px;
+    font-size: 4.79em;
+    margin-top: 30px;
     padding: 0 40px;
   }
 }

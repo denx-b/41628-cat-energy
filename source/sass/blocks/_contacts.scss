@@ -51,7 +51,7 @@
 @media (min-width: $tablet-width) {
   .contacts__header {
     width: auto;
-    padding: 49px 70px 59px;
+    padding: 63px 70px 59px;
   }
 
   .contacts__label {
@@ -113,6 +113,7 @@
   }
 
   .contacts__map {
+    height: 400px;
     background: url("../img/bg-map-desktop@1x.png") 0 0;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
