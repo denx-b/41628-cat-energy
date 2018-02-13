@@ -93,7 +93,6 @@
   .catalog-additional__properties {
     @include font-height(1.27em, 0.7em);
     width: 234px;
-    flex-basis: 234px;
     margin-right: -4px;
 
     td:nth-child(1) {
@@ -159,7 +158,7 @@
   }
 
   .catalog-additional__item-title {
-    width: 228px;
+    width: 287px;
     margin: 2px 0 0 0;
     flex-basis: auto;
   }
