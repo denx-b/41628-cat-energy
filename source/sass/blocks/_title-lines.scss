@@ -83,6 +83,7 @@
 
     &--form::after {
       top: calc(50% + 5px);
+      right: calc(((100vw - 1240px) / 2) - (100vw - 1250px));
     }
   }
 }

@@ -14,31 +14,45 @@
 </div>
 
 <header class="page-header">
-  <nav class="page-header__main-nav main-nav">
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list main-nav__list--main">
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--logo main-nav__link">
-            <svg class="main-nav__logo-image" title="Логотип Cat Energy" width="33" height="38">
-              <use xlink:href="#icon-logo-mobile"></use>
-            </svg>
-            <svg class="main-nav__logo-name main-nav__logo-name--mobile" title="Надпись Cat Energy" width="101" height="18">
-              <use xlink:href="#logo-mobile-header"></use>
-            </svg>
-            <svg class="main-nav__logo-name main-nav__logo-name--tablet" title="Надпись Cat Energy" width="172" height="57">
-              <use xlink:href="#logo-tablet"></use>
-            </svg>
-            <svg class="main-nav__logo-name main-nav__logo-name--desktop" title="Надпись Cat Energy" width="202" height="60">
-              <use xlink:href="#logo-desktop"></use>
-            </svg>
-            <button class="main-nav__toggle" type="button">Открыть меню</button>
-          </a>
-        </li>
-        <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Главная</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="form.html">Подбор программы</a></li>
-      </ul>
-    </div>
+  <a class="page-header__logo header-logo">
+    <svg class="header-logo__image" width="33" height="38" aria-label="Логотип Cat Energy">
+      <use xlink:href="#icon-logo-mobile"></use>
+    </svg>
+    <svg class="header-logo__name header-logo__name--mobile" width="101" height="18" aria-label="Cat Energy">
+      <use xlink:href="#logo-mobile-header"></use>
+    </svg>
+    <svg class="header-logo__name header-logo__name--tablet" width="172" height="57" aria-label="Логотип Cat Energy">
+      <use xlink:href="#logo-tablet"></use>
+    </svg>
+    <svg class="header-logo__name header-logo__name--desktop" width="202" height="60" aria-label="Логотип Cat Energy">
+      <use xlink:href="#logo-desktop"></use>
+    </svg>
+  </a>
+
+  <!--
+  Класс-модификатор main-nav--nojs для защиты от выключенного JavaScript в клиентском браузере
+  Класс-модификатор main-nav--closed, когда меню закрыто
+  Класс-модификатор main-nav--opened, когда меню открыто
+  -->
+  <nav class="main-nav main-nav--closed main-nav--nojs">
+    <svg class="main-nav__toggle main-nav__toggle--close" aria-hidden="true" role="presentation" width="18" height="18">
+      <title>Скрыть меню</title>
+      <use xlink:href="#icon-close"></use>
+    </svg>
+    <svg class="main-nav__toggle main-nav__toggle--open" aria-hidden="true" role="presentation" width="18" height="18">
+      <title>Скрыть меню</title>
+      <use xlink:href="#icon-mobile-menu"></use>
+    </svg>
+
+    <!--
+    Класс-модификатор main-nav__list--main используется только на гл. странице
+      делает текст элементов меню белого цвета, для отображение на зеленом фоне
+    -->
+    <ul class="main-nav__list main-nav__list--main">
+      <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Главная</a></li>
+      <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
+      <li class="main-nav__item"><a class="main-nav__link" href="form.html">Подбор программы</a></li>
+    </ul>
   </nav>
 </header>
 
@@ -55,7 +69,7 @@
 
         <source srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x" media="(min-width: 1300px)">
         <source srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x" media="(min-width: 768px)">
-        <img src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="">
+        <img src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Изображение упаковки с курицей">
       </picture>
     </div>
   </section>
@@ -154,37 +168,37 @@
   <div class="page-footer__wrapper">
     <section class="page-footer__logo">
       <a class="page-footer__link">
-        <img class="page-footer__image" src="img/logo-footer.svg" width="128" height="24" alt="">
+        <img class="page-footer__image" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
       </a>
     </section>
     <section class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link" href="https://vk.com/htmlacademy">
-            <svg class="social__icon social__icon--vkontakte social__icon--mobile" title="Мы в Вконтакте" width="22" height="12">
+          <a class="social__link social__link" href="https://vk.com/htmlacademy" aria-label="Переход на сайт вконтакте">
+            <svg class="social__icon social__icon--vkontakte social__icon--mobile" width="22" height="12">
               <use xlink:href="#icon-vk-mobile"></use>
             </svg>
-            <svg class="social__icon social__icon--vkontakte" title="Мы в Вконтакте" width="30" height="16">
+            <svg class="social__icon social__icon--vkontakte" width="30" height="16">
               <use xlink:href="#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link" href="https://www.instagram.com/htmlacademy">
-            <svg class="social__icon social__icon--instagram social__icon--mobile" title="Мы в Инстаграм" width="16" height="16">
+          <a class="social__link social__link" href="https://www.instagram.com/htmlacademy" aria-label="Переход на сайт instagram">
+            <svg class="social__icon social__icon--instagram social__icon--mobile" width="16" height="16">
               <use xlink:href="#icon-insta-mobile"></use>
             </svg>
-            <svg class="social__icon social__icon--instagram" title="Мы в Инстаграм" width="23" height="23">
+            <svg class="social__icon social__icon--instagram" width="23" height="23">
               <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link" href="https://www.facebook.com/htmlacademy">
-            <svg class="social__icon social__icon--facebook social__icon--mobile" title="Мы на Фейсбук" width="10" height="19">
+          <a class="social__link social__link" href="https://www.facebook.com/htmlacademy" aria-label="Переход на сайт facebook">
+            <svg class="social__icon social__icon--facebook social__icon--mobile" width="10" height="19">
               <use xlink:href="#icon-fb-mobile"></use>
             </svg>
-            <svg class="social__icon social__icon--facebook" title="Мы на Фейсбук" width="14" height="28">
+            <svg class="social__icon social__icon--facebook" width="14" height="28">
               <use xlink:href="#icon-fb"></use>
             </svg>
           </a>
@@ -194,7 +208,8 @@
     <section class="page-footer__copyright copyright">
       <a class="copyright__name" href="https://htmlacademy.ru/intensive/adaptive">
         <span>HTML Academy</span>
-        <svg class="copyright__image" title="Логотип htmlacademy" width="27" height="36">
+        <svg class="copyright__image" width="27" height="36" role="img">
+          <title>Переход на сайт Htmlacademy</title>
           <use xlink:href="#logo-htmlacademy"></use>
         </svg>
       </a>
