@@ -378,6 +378,10 @@
     margin-left: 50px;
     margin-bottom: 76px;
 
+    &--1 br {
+      display: none;
+    }
+
     &--3 {
       margin-bottom: 57px;
     }
@@ -460,7 +464,7 @@
     &--line2 {
       display: flex;
       justify-content: space-between;
-      padding-left: 1px;
+      padding-left: 20px;
     }
 
     &--line3 {
@@ -477,7 +481,6 @@
     margin-left: 20px;
 
     &--1 {
-      margin-left: 0;
       margin-bottom: 77px;
     }
 
@@ -503,7 +506,6 @@
 
     &--contacts {
       margin-top: 20px;
-      padding: 0 40px;
     }
 
     &--comment {
@@ -517,7 +519,7 @@
 
     &--full {
       padding: 0;
-      width: 570px;
+      width: 592px;
     }
   }
 

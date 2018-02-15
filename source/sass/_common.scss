@@ -12,6 +12,7 @@ body {
   min-width: 320px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 12.5px;
+  overflow-x: hidden;
 }
 
 .visually-hidden:not(:focus):not(:active) {
