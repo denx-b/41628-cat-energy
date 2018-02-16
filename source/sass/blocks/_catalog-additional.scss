@@ -1,6 +1,6 @@
 .catalog-additional {
   width: 320px;
-  padding: 20px 20px 36px 20px;
+  padding: 20px 20px 35px;
   margin: auto;
 }
 
@@ -63,7 +63,7 @@
 @media (min-width: $tablet-width) {
   .catalog-additional {
     width: 768px;
-    padding: 30px;
+    padding: 30px 30px 76px 30px;
   }
 
   .catalog-additional__title {
@@ -117,7 +117,7 @@
 @media (min-width: $desktop-width) {
   .catalog-additional {
     width: $desktop-width;
-    padding: 71px 40px 39px;
+    padding: 71px 40px 85px;
     display: flex;
     flex-wrap: wrap;
   }

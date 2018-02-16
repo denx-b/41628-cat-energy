@@ -41,7 +41,7 @@
   }
 
   .header-logo__name {
-    margin-top: 12px;
+    margin-top: 13px;
 
     &--mobile {
       display: none;
@@ -57,6 +57,10 @@
   .header-logo {
     margin: 29px 0 0 110px;
     padding-left: 0;
+  }
+
+  .header-logo__name {
+    margin-top: 12px;
   }
 
   .header-logo__name--tablet {
