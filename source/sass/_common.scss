@@ -11,6 +11,7 @@ html {
 body {
   min-width: 320px;
   font-family: "Oswald", "Arial", sans-serif;
+  font-display: fallback;
   font-size: 12.5px;
   overflow-x: hidden;
 }

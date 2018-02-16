@@ -3,7 +3,6 @@
 var gulp = require("gulp");
 var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
-
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
@@ -14,6 +13,7 @@ var include = require("posthtml-include");
 var sourcemaps = require('gulp-sourcemaps');
 var csso = require("gulp-csso");
 var uglify = require('gulp-uglify');
+var htmlmin = require('gulp-htmlmin');
 var rename = require("gulp-rename");
 var del = require("del");
 var run = require("run-sequence");
@@ -46,6 +46,10 @@ gulp.task("sprite", function() {
 gulp.task("html", function() {
   return gulp.src("source/*.html")
     .pipe(posthtml([include()]))
+    .pipe(htmlmin({
+        collapseWhitespace: true,
+        removeComments: true
+    }))
     .pipe(gulp.dest("build"));
 });
 
@@ -118,7 +122,7 @@ gulp.task("serve-inside", function() {
 gulp.task("serve", function() {
   directoryexists("build", function (result) {
     if (result) {
-      run("serve-inside");
+      run("build-html-only", "serve-inside");
     }
     else {
       run("build", "serve-inside");
@@ -127,6 +131,7 @@ gulp.task("serve", function() {
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("source/*.html", ["html"]).on("change", server.reload);
+  gulp.watch("source/js/**/*.js", ["scripts"]);
 });
 
 /**

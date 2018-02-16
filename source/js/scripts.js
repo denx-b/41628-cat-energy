@@ -1,18 +1,24 @@
-var menuToggle = function () {
-  if (navMain.classList.contains('main-nav--closed')) {
-    navMain.classList.remove('main-nav--closed');
-    navMain.classList.add('main-nav--opened');
-  } else {
-    navMain.classList.add('main-nav--closed');
-    navMain.classList.remove('main-nav--opened');
-  }
-};
+(function () {
+    // SVG for Everybody
+    svg4everybody();
 
-var navMain = document.querySelector('.main-nav');
-var navToggleOpen = document.querySelector('.main-nav__toggle--open');
-var navToggleClose = document.querySelector('.main-nav__toggle--close');
+  // Menu
+    var menuToggle = function () {
+        if (navMain.classList.contains('main-nav--closed')) {
+            navMain.classList.remove('main-nav--closed');
+            navMain.classList.add('main-nav--opened');
+        } else {
+            navMain.classList.add('main-nav--closed');
+            navMain.classList.remove('main-nav--opened');
+        }
+    };
 
-navMain.classList.remove('main-nav--nojs');
+    var navMain = document.querySelector('.main-nav');
+    var navToggleOpen = document.querySelector('.main-nav__toggle--open');
+    var navToggleClose = document.querySelector('.main-nav__toggle--close');
 
-navToggleOpen.addEventListener('click', menuToggle);
-navToggleClose.addEventListener('click', menuToggle);
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggleOpen.addEventListener('click', menuToggle);
+    navToggleClose.addEventListener('click', menuToggle);
+})();
