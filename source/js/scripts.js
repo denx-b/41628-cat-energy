@@ -62,7 +62,7 @@
       controls: [],
       scrollZoom: false
     });
-    //myMap.behaviors.disable('scrollZoom');
+    myMap.behaviors.disable('scrollZoom');
 
     myPlacemark = new ymaps.Placemark([59.93877301, 30.32321367], {}, {
       iconLayout: 'default#image',
