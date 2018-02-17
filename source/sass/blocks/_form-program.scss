@@ -91,7 +91,7 @@
 
   &::placeholder {
     color: $text-black-1;
-    font-size: 1.28em;
+    font-size: 16px;
     font-family: "Oswald", "Arial", sans-serif;
     text-transform: uppercase;
   }
@@ -252,7 +252,7 @@
 @media (min-width: $tablet-width) {
   .form-program {
     width: 768px;
-    padding-top: 34px;
+    padding-top: 35px;
   }
 
   .form-program__element {
@@ -271,6 +271,10 @@
       margin: 0;
       padding: 14px 18px;
       height: 174px;
+    }
+
+    &::placeholder {
+      font-size: 20px;
     }
   }
 
@@ -305,22 +309,6 @@
       margin-top: 45px;
       margin-bottom: 63px;
     }
-  }
-
-  ::-webkit-input-placeholder {
-    font-size: 20px;
-  }
-
-  ::-moz-placeholder {
-    font-size: 20px;
-  }
-
-  :-moz-placeholder {
-    font-size: 20px;
-  }
-
-  :-ms-input-placeholder {
-    font-size: 20px;
   }
 
   .form-program__box {
