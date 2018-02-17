@@ -1,6 +1,7 @@
 .main-nav {
   width: 320px;
   margin: auto;
+  position: relative;
 }
 
 .main-nav__list {
@@ -66,13 +67,13 @@
 .main-nav__toggle {
   position: absolute;
   right: 23px;
-  top: 23px;
+  top: -43px;
   width: 18px;
   height: 18px;
 
   &--open {
     right: 20px;
-    top: 21px;
+    top: -45px;
     width: 24px;
     height: 24px;
   }
