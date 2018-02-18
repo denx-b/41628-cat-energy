@@ -23,7 +23,7 @@
   font-weight: 500;
   color: $text-black-1;
   text-align: center;
-  padding: 21px 0;
+  padding: 21px 20px;
   display: inline-block;
   width: 100%;
 
@@ -112,26 +112,28 @@
 @media (min-width: $tablet-width) {
   .main-nav {
     width: auto;
-    padding-top: 22px;
-    margin: 0 0 0 auto;
+    margin: 0;
   }
 
   .main-nav__list {
-    padding: 0 30px;
     margin: auto;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
+    flex-wrap: wrap;
   }
 
   .main-nav__item {
     border-bottom: none;
+    margin-left: 36px;
+    padding: 10px 0 6px;
+    line-height: 25px;
 
     &--active::after {
       display: block;
       content: "";
       position: absolute;
-      bottom: 9px;
+      bottom: 4px;
       left: 0;
       background: $background-green;
       height: 2px;
@@ -139,14 +141,11 @@
     }
   }
 
-  .main-nav__item:not(:first-child) {
-    margin-left: 36px;
-  }
-
   .main-nav__link {
     font-weight: normal;
     font-size: 1.44em;
-    margin-top: 1px;
+    margin-top: 3px;
+    padding: 8px 0 6px;
 
     &--main {
       color: $text-white;
@@ -165,16 +164,10 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav {
-    padding-top: 54px;
-    width: calc(50% - 40px);
-  }
-
   .main-nav__list {
-    width: auto;
+    width: 570px;
     max-width: inherit;
-    padding: 0 40px 0 21px;
-    justify-content: center;
+    padding: 0;
 
     &--main {
       .main-nav__item--active::after {
@@ -197,8 +190,10 @@
   }
 
   .main-nav__item {
+    padding: 11px 0 5px;
+
     &--active::after {
-      bottom: 10px;
+      bottom: 1px;
     }
   }
 

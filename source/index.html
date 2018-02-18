@@ -14,50 +14,49 @@
   <include src="build/img/sprite.svg"></include>
 </div>
 
-<header class="page-header">
-  <a class="page-header__logo header-logo">
-    <svg class="header-logo__image" width="33" height="38" aria-label="Логотип Cat Energy">
-      <use xlink:href="#icon-logo-mobile"></use>
-    </svg>
-    <svg class="header-logo__name header-logo__name--mobile" width="101" height="18" aria-label="Cat Energy">
-      <use xlink:href="#logo-mobile-header"></use>
-    </svg>
-    <svg class="header-logo__name header-logo__name--tablet" width="172" height="57" aria-label="Логотип Cat Energy">
-      <use xlink:href="#logo-tablet"></use>
-    </svg>
-    <svg class="header-logo__name header-logo__name--desktop" width="202" height="60" aria-label="Логотип Cat Energy">
-      <use xlink:href="#logo-desktop"></use>
-    </svg>
-  </a>
-
-  <!--
-  Класс-модификатор main-nav--nojs для защиты от выключенного JavaScript в клиентском браузере
-  Класс-модификатор main-nav--closed, когда меню закрыто
-  Класс-модификатор main-nav--opened, когда меню открыто
-  -->
-  <nav class="main-nav main-nav--closed main-nav--nojs">
-    <svg class="main-nav__toggle main-nav__toggle--close" aria-hidden="true" role="presentation" width="18" height="18">
-      <title>Скрыть меню</title>
-      <use xlink:href="#icon-close"></use>
-    </svg>
-    <svg class="main-nav__toggle main-nav__toggle--open" aria-hidden="true" role="presentation" width="24" height="24">
-      <title>Показать меню</title>
-      <use xlink:href="#icon-mobile-menu"></use>
-    </svg>
+<header class="page-header page-header--main">
+  <div class="page-header__wrapper">
+    <a class="page-header__logo header-logo">
+      <svg class="header-logo__image" width="33" height="38" aria-label="Логотип Cat Energy">
+        <use xlink:href="#icon-logo-mobile"></use>
+      </svg>
+      <svg class="header-logo__name header-logo__name--mobile" width="101" height="18" aria-label="Cat Energy">
+        <use xlink:href="#logo-mobile-header"></use>
+      </svg>
+      <svg class="header-logo__name header-logo__name--tablet" width="172" height="57" aria-label="Логотип Cat Energy">
+        <use xlink:href="#logo-tablet"></use>
+      </svg>
+      <svg class="header-logo__name header-logo__name--desktop" width="202" height="60" aria-label="Логотип Cat Energy">
+        <use xlink:href="#logo-desktop"></use>
+      </svg>
+    </a>
 
     <!--
-    Класс-модификатор main-nav__list--main используется только на гл. странице
-      делает текст элементов меню белого цвета, для отображение на зеленом фоне
+    Класс-модификатор main-nav--nojs для защиты от выключенного JavaScript в клиентском браузере
+    Класс-модификатор main-nav--closed, когда меню закрыто
+    Класс-модификатор main-nav--opened, когда меню открыто
     -->
-    <ul class="main-nav__list main-nav__list--main">
-      <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Главная</a></li>
-      <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
-      <li class="main-nav__item"><a class="main-nav__link" href="form.html">Подбор программы</a></li>
-    </ul>
-  </nav>
-</header>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <svg class="main-nav__toggle main-nav__toggle--close" aria-hidden="true" role="presentation" width="18" height="18">
+        <title>Скрыть меню</title>
+        <use xlink:href="#icon-close"></use>
+      </svg>
+      <svg class="main-nav__toggle main-nav__toggle--open" aria-hidden="true" role="presentation" width="24" height="24">
+        <title>Показать меню</title>
+        <use xlink:href="#icon-mobile-menu"></use>
+      </svg>
 
-<main class="page-main page-main--main">
+      <!--
+      Класс-модификатор main-nav__list--main используется только на гл. странице
+        делает текст элементов меню белого цвета, для отображение на зеленом фоне
+      -->
+      <ul class="main-nav__list main-nav__list--main">
+        <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Главная</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="form.html">Подбор программы</a></li>
+      </ul>
+    </nav>
+  </div>
   <section class="cat-action">
     <div class="cat-action__wrapper">
       <h1 class="cat-action__title">Функциональное питание для котов</h1>
@@ -74,7 +73,9 @@
       </picture>
     </div>
   </section>
+</header>
 
+<main class="page-main page-main--main">
   <section class="page-main__categories categories">
     <h2 class="visually-hidden">Каталог</h2>
     <ul class="categories__list">
