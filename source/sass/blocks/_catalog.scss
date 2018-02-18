@@ -108,8 +108,8 @@
   .catalog__title {
     font-size: 4.8em;
     width: 768px;
-    padding: 13px 30px 0;
-    margin-bottom: 21px;
+    margin: 42px auto 21px;
+    padding-left: 30px;
     text-align: left;
   }
 
@@ -230,8 +230,8 @@
 @media (min-width: $desktop-width) {
   .catalog__title {
     width: #{$desktop-width};
-    padding: 30px 40px 0;
-    margin-bottom: 21px;
+    margin-top: 15px;
+    padding-left: 40px;
   }
 
   .catalog__list {
