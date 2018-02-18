@@ -100,7 +100,7 @@
     flex-direction: column;
     position: relative;
 
-    &::before {
+    &::after {
       position: absolute;
       counter-increment: item_number; /* Увеличиваем значение счетчика */
       content: counter(item_number); /* Выводим число */
