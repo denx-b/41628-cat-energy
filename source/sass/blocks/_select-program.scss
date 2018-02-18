@@ -1,7 +1,7 @@
 .select-program__title {
   width: 320px;
-  margin: auto;
-  padding: 24px 20px 33px;
+  padding: 0 20px;
+  margin: 24px auto 33px;
   font-size: 2.88em;
   color: $text-black-1;
   font-weight: 400;
@@ -18,7 +18,8 @@
 @media (min-width: $tablet-width) {
   .select-program__title {
     font-size: 4.79em;
-    padding: 39px 30px 51px;
+    padding: 0 30px;
+    margin: 43px auto 52px;
     width: 768px;
   }
 
@@ -34,7 +35,7 @@
   .select-program__title {
     width: $desktop-width;
     padding: 0 40px;
-    margin: 55px auto 52px;
+    margin-top: 16px;
   }
 
   .select-program__text {

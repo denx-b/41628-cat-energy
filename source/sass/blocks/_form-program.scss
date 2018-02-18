@@ -435,8 +435,9 @@
     }
 
     &--line3 {
-      width: 1240px;
-      padding-left: 20px;
+      width: 1300px;
+      padding: 0;
+      justify-content: flex-start;
     }
   }
 
@@ -454,10 +455,16 @@
     &--2 {
       margin-bottom: 74px;
     }
+
+    &--3 {
+      margin-left: 40px;
+    }
   }
 
   .form-program__line {
     width: 245px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
   .form-program__fields {
@@ -478,6 +485,10 @@
     &--comment {
       margin-top: 47px;
       margin-bottom: 65px;
+    }
+
+    &--additional {
+      padding: 0;
     }
   }
 
