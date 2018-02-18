@@ -21,6 +21,7 @@
   font-weight: 400;
   margin: 0;
   padding: 27px 0 10px 0;
+  max-width: 100%;
 }
 
 .cat-action__motto {
@@ -106,9 +107,9 @@
 
   .cat-action__wrapper {
     display: block;
-    box-sizing: content-box;
-    width: calc(100% - 518px);
-    padding: 55px 328px 0 190px;
+    position: relative;
+    width: 1300px;
+    padding: 55px 40px 135px;
     margin: auto;
     z-index: 1;
   }
@@ -119,25 +120,29 @@
   }
 
   .cat-action__title {
-    width: 435px;
+    width: 500px;
     font-size: 4.8em;
     padding-top: 27px;
+    padding-left: 80px;
     margin-left: 0;
   }
 
   .cat-action__motto {
-    width: 435px;
+    width: 500px;
+    padding-left: 80px;
     margin-top: 29px;
     margin-left: 0;
   }
 
   .cat-action__button {
     margin-top: 10px;
+    margin-left: 80px;
     padding: 15px 29px 15px 26px;
   }
 
   .cat-action__image {
-    float: right;
-    margin-top: -304px;
+    position: absolute;
+    left: 581px;
+    top: 78px;
   }
 }

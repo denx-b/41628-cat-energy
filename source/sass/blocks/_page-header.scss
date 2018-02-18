@@ -1,6 +1,8 @@
 @media (min-width: $tablet-width) {
   .page-header {
     display: flex;
+    max-width: 768px;
+    margin: auto;
   }
 }
 
@@ -8,5 +10,6 @@
   .page-header {
     z-index: 1;
     position: relative;
+    max-width: 1440px;
   }
 }
