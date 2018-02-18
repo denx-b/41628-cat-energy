@@ -4,23 +4,23 @@
 
   // Menu
   var menuToggle = function () {
-    if (navMain.classList.contains('main-nav--closed')) {
-      navMain.classList.remove('main-nav--closed');
-      navMain.classList.add('main-nav--opened');
+    if (navMain.classList.contains("main-nav--closed")) {
+      navMain.classList.remove("main-nav--closed");
+      navMain.classList.add("main-nav--opened");
     } else {
-      navMain.classList.add('main-nav--closed');
-      navMain.classList.remove('main-nav--opened');
+      navMain.classList.add("main-nav--closed");
+      navMain.classList.remove("main-nav--opened");
     }
   };
 
-  var navMain = document.querySelector('.main-nav');
-  var navToggleOpen = document.querySelector('.main-nav__toggle--open');
-  var navToggleClose = document.querySelector('.main-nav__toggle--close');
+  var navMain = document.querySelector(".main-nav");
+  var navToggleOpen = document.querySelector(".main-nav__toggle--open");
+  var navToggleClose = document.querySelector(".main-nav__toggle--close");
 
-  navMain.classList.remove('main-nav--nojs');
+  navMain.classList.remove("main-nav--nojs");
 
-  navToggleOpen.addEventListener('click', menuToggle);
-  navToggleClose.addEventListener('click', menuToggle);
+  navToggleOpen.addEventListener("click", menuToggle);
+  navToggleClose.addEventListener("click", menuToggle);
 
   // Yandex map
   var getMapConfig = function () {
@@ -62,11 +62,11 @@
       controls: [],
       scrollZoom: false
     });
-    myMap.behaviors.disable('scrollZoom');
+    myMap.behaviors.disable("scrollZoom");
 
     myPlacemark = new ymaps.Placemark([59.93877301, 30.32321367], {}, {
-      iconLayout: 'default#image',
-      iconImageHref: '/img/map-pin.png',
+      iconLayout: "default#image",
+      iconImageHref: "/img/map-pin.png",
       iconImageSize: curConfig.iconImageSize,
       iconImageOffset: curConfig.iconImageOffset
     });
