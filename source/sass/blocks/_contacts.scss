@@ -1,5 +1,9 @@
 .contacts {
   background-color: $background-base;
+
+  &--gray {
+    background: $background-gray;
+  }
 }
 
 .contacts__header {
@@ -8,10 +12,7 @@
   align-items: center;
   padding: 27px 20px;
   margin: auto;
-
-  &--gray {
-    background: $background-gray;
-  }
+  width: 320px;
 }
 
 .contacts__label {
@@ -50,7 +51,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts__header {
-    width: auto;
+    width: 768px;
     padding: 63px 70px 59px;
   }
 
