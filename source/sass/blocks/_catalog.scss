@@ -32,6 +32,11 @@
 .catalog__link {
   flex-basis: 140px;
   margin-top: 1px;
+  max-width: 100%;
+
+  picture {
+    max-width: 100%;
+  }
 
   &--more {
     width: 30px;
